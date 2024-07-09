@@ -1,13 +1,15 @@
-import React from 'react'
+import React from 'react';
+import './LogoLink.css'
 
-function LogoLink(props) {
+function LogoLink() {
   return (
-    <a class="logo__link" href="#">
- 
-     <p class="logo__title">Юрий Михеев</p>
-  </a> 
+    <a  href="#"> 
+     <p className="logo__title">
+        Юрий Михеев</p>
+    </a> 
     
   );
 }
 
 export default LogoLink;
+
