@@ -1,0 +1,17 @@
+.hero {
+  margin-bottom: 106px;
+}
+.hero__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+
+
+@media (max-width: 541px) {
+  .hero {
+    margin-bottom: 100px;
+  }
+ 
+}

@@ -26,7 +26,7 @@ vertical-align: top;
 }
 .nav__link:hover:after {
  
-  background-image: url(../../assets/yello-menu.png);
+  background-image: url(../../assets/yellow-menu.png);
   content: "";
   position: absolute;
   top: 20px;

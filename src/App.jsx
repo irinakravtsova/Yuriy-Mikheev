@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Header from './components/Header/Header'
+import HeroSection from './components/main/HeroSection/HeroSection'
 
 
 function App() {
@@ -9,7 +10,10 @@ function App() {
   return (
    <div >
     < Header />
-    < HeroSection />
+    <main>
+     < HeroSection />
+    </main>
+   
    </div>
   )
 }

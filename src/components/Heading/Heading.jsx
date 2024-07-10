@@ -1,11 +1,11 @@
 import React from 'react'
-import './Heading.css'
+
 
 
 function Heading(props) {
  if (props.level === 'h1') {
   return (
-    <h1 className='heading-h1'>{props.text}</h1>
+    <h1 className={props.isClass}>{props.text}</h1>
   );
  }
 
