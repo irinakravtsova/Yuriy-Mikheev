@@ -5,7 +5,9 @@ import Heading from '../../Heading/Heading';
 import Subtitle from '../Subtitle/Subtitle';
 import TextBlock from '../TextBloсk/TextBloсk';
 import Button from '../../button/button';
-import LinkButton from '../../linkButton/linkButton';
+
+import Brand from '../Brand/Brand';
+import FirstConsultation from '../FirstСonsultation/FirstConsultation';
 
 
 function InfoBox() {
@@ -20,20 +22,18 @@ function InfoBox() {
         < Subtitle
           isClass = {'hero-subtitle'}
           text = 'повысить качество вашей жизни'
-        />
-      </div>
+        />      
     
+        < TextBlock
+          isClass = {'text'}
+          /> 
+        < Brand
+        isClass = {'brend'}
+        text = 'Помощь с заботой и уважением'    
+        /> 
+        < FirstConsultation /> 
     
-      < TextBlock
-        isClass = {'text'}
-         /> 
-      < LinkButton 
-        isClass = {'hero__info-button'}
-        text = 'Начать'      
-      />
-    
-
- 
+    </div> 
   </div>
   );
 }
