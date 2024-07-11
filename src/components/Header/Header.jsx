@@ -7,7 +7,7 @@ import HeaderContact from '../HeadeContact/HeaderContact';
 
 function Header() {
   return (
-    <div className='header'>
+    <header className='header'>
       <div className='container'>
         <div className='header-wrapper'>
           < Navigation />
@@ -17,7 +17,7 @@ function Header() {
       
       </div>
     
-     </div>
+     </header>
      
      
   );

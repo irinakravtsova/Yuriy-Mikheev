@@ -17,9 +17,34 @@ body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: #331B3B;
+ 
+}
+.body-fone {
+  position: relative;
+  overflow: hidden;
+  max-width: 1400px;
+
 }
 .body_fixed {
+  max-width: 1400px;
   overflow: hidden;
+}
+.body-fone::after {
+ 
+  content: "";
+  position: absolute;
+  top: -120px;
+right: 0px;
+  display: block;
+  width: 867.54px;
+  height: 820px;
+  background-image: url(/public/fone-hero.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: local;
+  z-index: -10;
+
+  /* background-size: 100%; */
 }
 
 /* font-family: 'Playfair Display', serif; */
@@ -30,7 +55,10 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px 0 50px;
+
  }
+
+
  .title {
 
  text-align: center;
@@ -54,6 +82,7 @@ letter-spacing: -0.48px;
   .container {
     width: 100%;
     padding: 0 15px 0 15px;
+    position: relative;
    }
    .title {
      font-size: 45px;

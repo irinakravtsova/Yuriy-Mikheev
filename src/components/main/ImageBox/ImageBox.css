@@ -1,17 +1,14 @@
 
 .hero__image {
-  /* width: 50%; */
-  /* position: relative;
-  background-image: url(/resurses/hero_fone.svg);
+ /* position: relative; */
+  /* background-image: url(../../../assets/fone-hero.svg);
   background-repeat: no-repeat;
- /* background-size: 100%; */
- /* width: 728px;
+ background-size: 100%;
+ width: 728px;
   height: 685px;
-  padding-left: 16px; */ 
+  padding-left: 16px;  */
 }
-.header-img-fon {
-  
-}
+
 .hero__image-foto {
   /* position: absolute; */
   /* left: 311px;

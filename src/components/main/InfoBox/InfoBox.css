@@ -32,6 +32,7 @@ letter-spacing: -0.87px;
   width: 291px;
   height: 20px;
   background-color: #FDC221;
+  z-index: -5;
 }
 
 .hero__info-button {
