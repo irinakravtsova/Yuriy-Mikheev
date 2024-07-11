@@ -1,49 +1,4 @@
-.hero {
-  margin-bottom: 106px;
-}
-.hero__inner {
-  display: flex;
-  justify-content: space-between;
-}
-.hero__info {
-  margin-top: 134px;
-  width: 50%;
-}
-.hero__info-text {
-  margin-bottom: 24px;
-  font-size: 77px;
-  font-weight: 700;
-  font-weight: 600;
-  line-height: 88px;
-  letter-spacing: -0.87px;
- 
-}
-.hero__info-text span {
- 
-font-size: 77px;
 
-font-weight: 300;
-line-height: 99.8%;
-letter-spacing: -0.87px;
-
-}
-
-.hero__info-button {
-  margin-top: 18px;
-  margin-left: 18px;
-padding: 22px 49px;
-  font-size: 17px;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.34px;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: #331B3B;
-  border-radius: 10px;
-}
-svg {
-  margin: auto;
-}
 .hero__image {
   /* width: 50%; */
   /* position: relative;
@@ -75,12 +30,7 @@ svg {
 
 
 @media (max-width: 961px) {
-  .hero__info-text {
-       font-size: 40px;
-      line-height: 47px;
-    letter-spacing: -1.2px;
-   
-  }
+
   .hero__image-foto {
       left: 234px;
     top: 32px;
@@ -91,20 +41,7 @@ svg {
 
 
 @media (max-width: 541px) {
-  .hero {
-    margin-bottom: 100px;
-  }
-  .hero__wrapper {
-    margin-top: 50px;
-  
-  }
 
-  .hero__wrapper_text {
-       font-size: 32px;
-      line-height: 39px;
-    letter-spacing: -0.6px;
-   
-  }
   .hero__image-foto {
       left: 77px;
     top: 32px;
