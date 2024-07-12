@@ -1,24 +1,27 @@
 .hero__info {
-  margin-top: 134px;
+  margin-top: 16px;
+  /* padding-left: 36px; */
   width: 50%;
   /* display: flex;
   flex-direction: column; */
 }
 .hero__title-box {
-  margin-bottom: 40px;
-  padding-left: 35px;
+  /* margin-bottom: 40px; */
+  /* padding-left: 35px; */
 }
 .hero-title {
   /* margin-bottom: 24px; */
-  font-size: 77px;
+
+  font-size: 66px;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: -0.01em; 
 }
 .hero-subtitle {
   margin-bottom: 28px; 
+
 position: relative;
-font-size: 67px;
+font-size: 42px;
 font-weight: 300;
 line-height: 99.8%;
 letter-spacing: -0.87px;
@@ -27,7 +30,7 @@ letter-spacing: -0.87px;
  
   content: "";
   position: absolute;
-  top: 120px;
+  top: 73px;
   left: -35px;
   display: block;
   width: 291px;

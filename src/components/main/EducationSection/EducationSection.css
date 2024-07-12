@@ -1,0 +1,26 @@
+.box-about {
+  padding-left: 36px;
+}
+
+.title-about {
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.01em; 
+}
+.subtitle-about {
+  margin-bottom: 28px; 
+font-size: 32px;
+font-weight: 700;
+line-height: 99.8%;
+letter-spacing: -0.87px;
+}
+.text-about {
+  font-weight: 400;
+  font-size: 20px;
+   line-height:  150% ;
+  letter-spacing: 0.64px;
+
+}
+

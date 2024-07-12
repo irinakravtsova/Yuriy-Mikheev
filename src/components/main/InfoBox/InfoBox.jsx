@@ -8,6 +8,7 @@ import Button from '../../button/button';
 
 import Brand from '../Brand/Brand';
 import FirstConsultation from '../FirstСonsultation/FirstConsultation';
+import TextAbout from '../textAbout/textAbout';
 
 
 function InfoBox() {
@@ -23,17 +24,18 @@ function InfoBox() {
           isClass = {'hero-subtitle'}
           text = 'повысить качество вашей жизни'
         />      
+
     
-        < TextBlock
-          isClass = {'text'}
+    </div> 
+        
+    < TextAbout
+          // isClass = {'text'}
           /> 
-        < Brand
+        {/* < Brand
         isClass = {'brend'}
         text = 'Помощь с заботой и уважением'    
         /> 
-        < FirstConsultation /> 
-    
-    </div> 
+        < FirstConsultation />  */}
   </div>
   );
 }
