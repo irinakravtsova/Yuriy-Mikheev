@@ -1,0 +1,11 @@
+.aboutme-text {
+  margin-bottom: 10px;
+  font-weight: 400;
+font-size: 17px;
+line-height: 146%;
+letter-spacing: 0.02em;
+color: rgba(51, 27, 59, 0.66);
+} 
+.aboutme__text-wrapper {
+ margin-top: 24px;
+}

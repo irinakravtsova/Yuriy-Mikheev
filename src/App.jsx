@@ -5,6 +5,7 @@ import HeroSection from './components/section/HeroSection/HeroSection'
 import ServicesSection from './components/section/ServicesSection/ServicesSection'
 import FirstConsultation from './components/main/FirstСonsultation/FirstConsultation'
 import AboutMe from './components/section/AboutMeSection/AboutMe'
+import EducationSection from './components/section/EducationSection/EducationSection'
 
 
 
@@ -21,6 +22,7 @@ function App() {
           < ServicesSection />
           <FirstConsultation />
           < AboutMe />
+          < EducationSection />
        
 
           </main>

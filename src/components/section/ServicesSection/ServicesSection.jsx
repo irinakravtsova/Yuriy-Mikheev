@@ -2,14 +2,6 @@ import React from 'react'
 
 import './ServicesSection.css'
 import Heading from '../../Heading/Heading';
-
-// import Picture1 from '../../../assets/выход из подавленности.svg'
-// import Picture2 from '../../../assets/горе.jpg'
-// import Picture3 from '../../../assets/семья.jpg'
-// import Picture4 from '../../../assets/жизнь.svg'
-// import Picture5 from '../../../assets/танго в троем.svg'
-// import Picture6 from '../../../assets/изменения.jpg'
-// import ServicesCard from '../ServicesCard/ServicesCard';
 import SwiperServices from '../../main/Swiper/SwiperServices';
 
 
@@ -51,16 +43,7 @@ function ServicesSection() {
         title ='Чем могу помочь' />
         <div className='services-wrapper'>
          < SwiperServices />
-        </div>
-     
-
-      {/* { services.map(service => (
-        <ServicesCard 
-          title={service.title}
-          image={service.image}
-         />
-      ))} */}
-  
+        </div>  
     </section>   
   );
 }

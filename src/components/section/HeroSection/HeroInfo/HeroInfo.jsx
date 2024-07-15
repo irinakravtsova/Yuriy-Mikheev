@@ -1,21 +1,24 @@
 import React from 'react'
 
 
-import Heading from '../../Heading/Heading';
-import Subtitle from '../Subtitle/Subtitle';
-import TextBlock from '../TextBloсk/TextBloсk';
-
-
+import Heading from '../../../Heading/Heading';
+import Subtitle from '../../../main/Subtitle/Subtitle';
+import TextBlock from '../../../main/TextBloсk/TextBloсk';
 
 import TextAbout from '../textAbout/textAbout';
 
 
-function InfoBox({
+function HeroInfo({
   isClassBox,
   isClassSubtitle,
   level,
   title,
   subtitle,
+  isClassText,
+  text1,
+  text2,
+  text3,
+  text4
 }) {
   return (
     <div className={isClassBox}>    
@@ -27,18 +30,12 @@ function InfoBox({
           subtitle = {subtitle}
           isClassSubtitle = {isClassSubtitle}         
         />
-        < TextAbout
-          // isClass = {'text'}
+        < TextAbout    
           /> 
-        {/* <TextBox  />    */}
-
-    
-
-        
     
  
   </div>
   );
 }
 
-export default InfoBox;
+export default HeroInfo;

@@ -1,0 +1,11 @@
+.education {
+  margin-bottom: 24px;
+  padding-top: 92px;
+  background-image: url(/education-fone.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.education-wrapper {
+  padding: 90px 0 97px 140px;  
+}
+

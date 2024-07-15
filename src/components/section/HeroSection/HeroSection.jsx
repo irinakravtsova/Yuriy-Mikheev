@@ -1,17 +1,15 @@
 import React from 'react'
 import './HeroSection.css'
-import InfoBox from '../../main/InfoBox/InfoBox';
+
 import ImageBox from '../../main/ImageBox/ImageBox';
 import Banana from '../../../assets/hero-photo.png'
-
-
+import HeroInfo from './HeroInfo/HeroInfo';
 
 function HeroSection() {
   return (
-   <section className='section'>
-    <div className='container'>
+   <section className='section hero'>  
        <div className='section-wrapper'>
-         <InfoBox
+         <HeroInfo
           isClassBox = {'hero-info'}
           level = 'h1'    
           title = 'Я помогаю вам'
@@ -21,12 +19,9 @@ function HeroSection() {
          <ImageBox 
           image= {Banana}
           isClassImage = 'hero-image'
-          isAlt = 'Yuri Mickheev' />     
-
-        </div>
-                  
-       </div>
-    </section>
+          isAlt = 'Yuri Mickheev' />  
+        </div>                  
+  </section>
 
  
   );

@@ -38,7 +38,7 @@ right: 0px;
   display: block;
   width: 867.54px;
   height: 820px;
-  background-image: url(/public/fone-hero.svg);
+  background-image: url(/fone-hero.svg);
   background-repeat: no-repeat;
   background-position: right;
   background-attachment: local;
@@ -47,8 +47,7 @@ right: 0px;
   /* background-size: 100%; */
 }
 
-/* font-family: 'Playfair Display', serif; */
-
+/* font-family: 'Playfair Display', serif; */.
 /* font-family: 'Roboto', sans-serif; */
 
 .container {
@@ -75,7 +74,7 @@ right: 0px;
 }
 
 .heading-h2 {
-  margin-bottom: 90px;
+ 
   font-weight: 700;
   font-size: 48px;
   line-height: 106%;

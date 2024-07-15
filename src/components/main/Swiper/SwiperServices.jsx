@@ -25,7 +25,7 @@ export default function SwiperServices() {
         <div>
         <SwiperSlide>
           <img src={Picture1} alt="" />
-          <p className='text-slider'>Тревожные и/или подавленные состояния</p>
+          <p >Тревожные и/или подавленные состояния</p>
          </SwiperSlide>
         <SwiperSlide>
            <img src={Picture2} alt="" />
