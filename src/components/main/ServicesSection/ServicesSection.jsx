@@ -1,4 +1,5 @@
 import React from 'react'
+
 import './ServicesSection.css'
 import Heading from '../../Heading/Heading';
 
@@ -9,6 +10,8 @@ import Picture4 from '../../../assets/жизнь.svg'
 import Picture5 from '../../../assets/танго в троем.svg'
 import Picture6 from '../../../assets/изменения.jpg'
 import ServicesCard from '../ServicesCard/ServicesCard';
+import SwiperServices from '../Swiper/SwiperServices';
+
 
 const services =[
   {
@@ -46,12 +49,14 @@ function ServicesSection(props) {
         level = 'h2'
         text ='Чем могу помочь' />
 
-      { services.map(service => (
+      < SwiperServices />
+
+      {/* { services.map(service => (
         <ServicesCard 
           title={service.title}
           image={service.image}
          />
-      ))}
+      ))} */}
   
     </div>   
   );
