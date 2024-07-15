@@ -1,19 +1,13 @@
 import React from 'react'
-import Banana from '../../../assets/hero-photo.png'
-import './ImageBox.css'
 
-
-function ImageBox() {
+function ImageBox(props) {
   return (
     <div className='hero__image'>
 
-      <img src={Banana}
-       className='hero__image-foto' alt="" />
-
+      <img src={props.image}
+       className={props.isClassImage} alt={props.isAlt} />
     
-    </div>
-  
+    </div>  
   )
 }
-
 export default ImageBox;

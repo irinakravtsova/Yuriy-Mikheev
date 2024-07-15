@@ -2,7 +2,7 @@ import React from 'react'
 import './textAbout.css'
 
 
-function TextAbout(props) {
+function TextAbout() {
  
   return (
     <div className='box-about'>

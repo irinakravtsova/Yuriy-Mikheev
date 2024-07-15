@@ -1,5 +1,8 @@
 .firstconsultation-box {
-  /* margin-top: 22px; */
+  margin-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .firstconsultation-text {
   margin-top: 14px;
@@ -8,3 +11,11 @@ font-weight: 700;
 line-height: 99.8%;
 letter-spacing: -0.87px;
 }
+.brend {
+  margin-top: 28px;
+  font-size: 37px;
+font-weight: 700;
+line-height: 99.8%;
+letter-spacing: -0.87px;
+}
+

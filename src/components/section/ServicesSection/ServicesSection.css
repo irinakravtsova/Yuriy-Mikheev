@@ -1,25 +1,28 @@
 .services {
-  padding: 92px 0 107px 140px;
+  margin-bottom: 24px;
+  padding-top: 92px;
   background-image: url(/public/ServicesSection.svg);
   background-repeat: no-repeat;
 }
-.services {
-  margin-bottom: 164px;
+.services-wrapper {
+  padding: 0px 0 97px 140px;
+  
 }
+
 .services__inner {
   padding: 92px 0 100px 140px;
   background-image: url(/resurses/services_fone.svg);
   background-repeat: no-repeat;
 }
 
-.services__wrapper {
+/* .services__wrapper {
 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 50px;
  
-}
+} */
 .service__item {
   width: 300px;
   height: 300px;

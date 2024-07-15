@@ -1,11 +1,12 @@
 import React from 'react'
 
-
-
-function Subtitle(props) {
+function Subtitle({
+  isClassSubtitle,
+  subtitle
+}) {
 
   return (
-    <p className= {props.isClass}>{props.text}</p>
+    <p className= {isClassSubtitle}>{subtitle}</p>
   );
  }
 

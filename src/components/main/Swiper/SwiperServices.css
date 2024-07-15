@@ -1,12 +1,8 @@
 .swiper {
-  
+  margin-right: 20px;
   width: 100%;
   height: avto;
- border: 2px solid red ;
  position: relative;
-}
-.swiper-wrapper {
-
 }
 
 .swiper-slide {
@@ -21,7 +17,6 @@
   align-items: center;
   max-width: 308px;
   max-height: 240px;
-  /* border: 2px solid red ; */
   border-radius: 10px;
 }
 
@@ -46,26 +41,15 @@
 .swiper-button-prev:after, 
 .swiper-rtl, 
 .swiper-button-next:after {
- border: 2px solid #331B3B ;
-border-radius: 20px;
-font-size: 20px;
-font-weight: 700;
-background-color: #95859a;
-padding: 5px 6px 5px 6px;
-}
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #c5c1c6;
+    padding: 6px 10px 6px 10px;
+  }
 .swiper-button-prev,
 .swiper-button-next {
   color: #331B3B;
-/* z-index: 1000;
-  left: -25px;  */
-top: 200px 
 }
-/* .swiper-button-next {
-  left: 0px;
-  right: avto;
-  color: #331B3B;
-  z-index: 100;
-  left: 5px;
-top: 200px
-} */
+
 

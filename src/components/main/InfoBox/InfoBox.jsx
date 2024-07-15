@@ -1,41 +1,42 @@
 import React from 'react'
-import './InfoBox.css'
+
 
 import Heading from '../../Heading/Heading';
 import Subtitle from '../Subtitle/Subtitle';
 import TextBlock from '../TextBloсk/TextBloсk';
-import Button from '../../button/button';
 
-import Brand from '../Brand/Brand';
-import FirstConsultation from '../FirstСonsultation/FirstConsultation';
+
+
 import TextAbout from '../textAbout/textAbout';
 
 
-function InfoBox() {
+function InfoBox({
+  isClassBox,
+  isClassSubtitle,
+  level,
+  title,
+  subtitle,
+}) {
   return (
-    <div className='hero__info'>
-      <div className='hero__title-box'>
-        < Heading
-          level = 'h1'
-          isClass = {'hero-title'}
-          text = 'Я помогаю вам '
-        />
+    <div className={isClassBox}>    
+        < Heading  
+          level = {level}     
+          title = {title}
+          />
         < Subtitle
-          isClass = {'hero-subtitle'}
-          text = 'повысить качество вашей жизни'
-        />      
-
-    
-    </div> 
-        
-    < TextAbout
+          subtitle = {subtitle}
+          isClassSubtitle = {isClassSubtitle}         
+        />
+        < TextAbout
           // isClass = {'text'}
           /> 
-        {/* < Brand
-        isClass = {'brend'}
-        text = 'Помощь с заботой и уважением'    
-        /> 
-        < FirstConsultation />  */}
+        {/* <TextBox  />    */}
+
+    
+
+        
+    
+ 
   </div>
   );
 }
