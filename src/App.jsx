@@ -6,6 +6,7 @@ import ServicesSection from './components/section/ServicesSection/ServicesSectio
 import FirstConsultation from './components/main/FirstСonsultation/FirstConsultation'
 import AboutMe from './components/section/AboutMeSection/AboutMe'
 import EducationSection from './components/section/EducationSection/EducationSection'
+import OnlineСourse from './components/main/onlineСourse/onlineСourse'
 
 
 
@@ -18,7 +19,8 @@ function App() {
           < Header />
           <main>
           < HeroSection />
-          <FirstConsultation />
+          <OnlineСourse />
+        
           < ServicesSection />
           <FirstConsultation />
           < AboutMe />

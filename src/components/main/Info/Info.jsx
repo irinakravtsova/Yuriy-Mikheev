@@ -25,7 +25,7 @@ function Info({
         <Text  
            isClassText= {isClassText}
            isClassTextWrapper = {isClassTextWrapper} 
-           text1 = {text1}
+          //  text1 = {text1}
            text2 = {text2}
            text3 = {text3}
            text4 = {text4}

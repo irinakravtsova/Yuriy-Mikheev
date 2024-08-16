@@ -3,6 +3,7 @@ import './EducationSection.css'
 
 import Heading from '../../Heading/Heading';
 import SwiperServices from '../../main/Swiper/SwiperServices';
+import SwiperEducation from '../../main/Swiper/SwiperEducation';
 
 
 function EducationSection() {
@@ -14,7 +15,7 @@ function EducationSection() {
         isClassTitle = 'services-title'
         title ='Моя квалификация' />
         <div className='education-wrapper'>
-         < SwiperServices />
+         < SwiperEducation />
         </div>  
    
     </section>

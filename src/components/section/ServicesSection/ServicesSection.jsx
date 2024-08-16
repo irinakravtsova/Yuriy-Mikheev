@@ -40,7 +40,7 @@ function ServicesSection() {
       <Heading 
         level = 'h2'
         isClassTitle = 'services-title'
-        title ='Чем могу помочь' />
+        title ='Чем могу ещё помочь:' />
         <div className='services-wrapper'>
          < SwiperServices />
         </div>  

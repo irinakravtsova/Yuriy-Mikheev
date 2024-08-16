@@ -12,9 +12,9 @@ function HeroSection() {
          <HeroInfo
           isClassBox = {'hero-info'}
           level = 'h1'    
-          title = 'Я помогаю вам'
+          title = 'Я помогу вам'
           isClassSubtitle={'hero-subtitle'}
-          subtitle= 'повысить качество вашей жизни'
+          subtitle= 'обрести уверенность  в жизни и на работе'
          />  
          <ImageBox 
           image= {Banana}

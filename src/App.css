@@ -46,20 +46,18 @@ right: 0px;
 
   /* background-size: 100%; */
 }
-
-/* font-family: 'Playfair Display', serif; */.
-/* font-family: 'Roboto', sans-serif; */
-
 .container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px 0 50px;
-
- }
-
- .section {
+}
+.section {
   margin-bottom: 20px;
 }
+
+/* font-family: 'Playfair Display', serif; */
+/* font-family: 'Roboto', sans-serif; */
+
 .section-wrapper {
   display: flex;
   justify-content: space-between;

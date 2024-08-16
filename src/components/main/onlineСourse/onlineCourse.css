@@ -1,0 +1,34 @@
+.course__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.course-box { 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 4px solid #FDC221;
+  border-radius: 10px;
+max-width: 800px;;
+ padding: 20px;
+ margin: 56px 0 56px 0;
+
+}
+.course-text {
+  /* margin-top: 14px; */
+  font-size: 24px;
+font-weight: 600;
+line-height: 150%;
+letter-spacing: -0.87px;
+}
+
+.course-text-bold {
+  font-size: 32px;
+}
+.brend {
+  margin-top: 28px;
+  font-size: 37px;
+font-weight: 700;
+line-height: 99.8%;
+letter-spacing: -0.87px;
+}
+

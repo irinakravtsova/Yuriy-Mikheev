@@ -9,3 +9,11 @@ color: rgba(51, 27, 59, 0.66);
 .aboutme__text-wrapper {
  margin-top: 24px;
 }
+.aboutme-image {
+  max-width: 670px;
+  align-items: baseline;
+}
+.aboutme-info {
+  margin-top: 186px;
+  width: 50%;
+}

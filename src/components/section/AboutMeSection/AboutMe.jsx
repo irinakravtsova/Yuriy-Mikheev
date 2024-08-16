@@ -5,7 +5,7 @@ import './AboutMe.css'
 import InfoBox from '../HeroSection/HeroInfo/HeroInfo';
 import ImageBox from '../../main/ImageBox/ImageBox';
 
-import Banana from '../../../assets/hero-photo.png'
+import Component from '../../../assets/Component 1.jpg'
 import Info from '../../main/Info/Info';
 
 
@@ -16,11 +16,11 @@ function AboutMe() {
    <section className='section aboutme'>
       <div className='section-wrapper'>
          <ImageBox 
-            image= {Banana}
-            isClassImage = 'hero-image'
+            image= {Component}
+            isClassImage = 'aboutme-image'
             isAlt = 'Yuri Mickheev'/>           
          <Info
-             isClassBox = {'hero-info'}
+             isClassBox = {'aboutme-info'}
              level = 'h2'    
              title = 'Обо мне'
              isClassTextWrapper = 'aboutme__text-wrapper'

@@ -11,10 +11,10 @@
 .hero-subtitle {
   margin-bottom: 22px; 
   margin-top: 14px;
-
 position: relative;
-font-size: 32px;
-font-weight: 300;
+font-size: 36px;
+font-weight: 600;
+
 line-height: 99.8%;
 letter-spacing: -0.87px;
 }
@@ -22,7 +22,7 @@ letter-spacing: -0.87px;
  
   content: "";
   position: absolute;
-  top: 23px;
+  top: 62px;
   left: -35px;
   display: block;
   width: 291px;

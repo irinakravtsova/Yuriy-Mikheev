@@ -8,7 +8,7 @@
   letter-spacing: -0.01em; 
 }
 .subtitle-about {
-  margin-bottom: 28px; 
+  margin-bottom: 24px; 
 font-size: 32px;
 font-weight: 700;
 line-height: 99.8%;
@@ -20,5 +20,10 @@ letter-spacing: -0.87px;
    line-height:  150% ;
   letter-spacing: 0.64px;
 
+} 
+.text-about-metod {
+  margin-top: 10px;
+  font-weight: 600;
+  line-height: 100%;
 }
 

@@ -6,7 +6,7 @@ function Subtitle({
 }) {
 
   return (
-    <p className= {isClassSubtitle}>{subtitle}</p>
+    <p className= {isClassSubtitle}>обрести уверенность <br></br>в жизни и на работе </p>
   );
  }
 
