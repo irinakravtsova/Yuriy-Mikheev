@@ -25,27 +25,27 @@ export default function SwiperServices() {
         <div>
         <SwiperSlide>
           <img src={Picture1} alt="" />
-          <p >Тревожные и/или подавленные состояния</p>
+          <p className='services-text' >Тревожные и/или подавленные состояния</p>
          </SwiperSlide>
         <SwiperSlide>
            <img src={Picture2} alt="" />
-           <p>РАБОТА С ГОРЕМ И ТРАВМОЙ</p>
+           <p className='services-text'>РАБОТА С ГОРЕМ И ТРАВМОЙ</p>
           </SwiperSlide>
         <SwiperSlide>
            <img src={Picture3} alt="" />
-           <p>ОТНОШЕНИЯ В СЕМЬЕ И СОЦИУМЕ</p>
+           <p className='services-text'>ОТНОШЕНИЯ В СЕМЬЕ И СОЦИУМЕ</p>
          </SwiperSlide>
         <SwiperSlide>
            <img src={Picture4} alt="" />
-           <p>СИМПТОМЫ, ВЛИЯЮЩИЕ НА ЖИЗНЬ</p>
+           <p className='services-text'>СИМПТОМЫ, ВЛИЯЮЩИЕ НА ЖИЗНЬ</p>
         </SwiperSlide>
         <SwiperSlide>
            <img src={Picture5} alt="" /> 
-           <p>СОЗАВИСИМЫЕ ОТНОШЕНИЯ</p>
+           <p className='services-text'>СОЗАВИСИМЫЕ ОТНОШЕНИЯ</p>
           </SwiperSlide>
         <SwiperSlide>
         <img src={Picture6} alt="" />
-        <p>ПЕРЕЖИВАНИЕ ИЗМЕНЕНИЙ</p>
+        <p className='services-text'>ПЕРЕЖИВАНИЕ ИЗМЕНЕНИЙ</p>
          </SwiperSlide>
         </div>
         

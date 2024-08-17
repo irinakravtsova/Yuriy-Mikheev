@@ -1,12 +1,62 @@
 .education {
   margin-bottom: 24px;
-  padding-top: 92px;
+  padding-top: 48px;
   background-image: url(/education-fone.svg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
 }
 .education-wrapper {
-  padding: 90px 0 97px 140px; 
+  padding: 34px 0 97px 168px; 
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
  
 }
+.education-item {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  /* flex-direction: column; */
+  /* max-width: 250px; */
+}
+.education-title {
+  font-weight: 700;
+font-size: 24px;
+line-height: 146%;
+ }
+
+ .education-title-h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 146%;
+  text-align: center;
+ }
+
+.education-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 146%;
+ }
+ .education-image {
+  max-width: 68px; 
+  transition: transform 0.8s ease;
+ 
+ }
+ .education-image-wrapper {
+ 
+  width: 10%;
+ }
+ .diplom {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+ }
+ .education-image:hover {
+  transform: scale(10);
+ }
+
+ .education-info {
+  max-width: 700px;
+ }
 

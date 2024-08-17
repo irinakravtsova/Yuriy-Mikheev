@@ -6,11 +6,11 @@ function Text(props) {
     <div className={props.isClassTextWrapper}>
       <p 
         className={props.isClassText}>
-        {props.text1}
+        {props.text2}
       </p>
         <p 
         className={props.isClassText}>
-        {props.text2}
+        {props.text22}
       </p>
           <p 
           className={props.isClassText}>
@@ -19,6 +19,10 @@ function Text(props) {
       <p 
           className={props.isClassText}>
           {props.text4}
+      </p>
+      <p 
+          className={props.isClassText}>
+          {props.text5}
       </p>
     </div>
 
