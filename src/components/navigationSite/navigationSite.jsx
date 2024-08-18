@@ -3,15 +3,15 @@ import './navigationSite.css'
 import NavigationItem from '../navigationItem/navigationItem'
 
 const navItems = [
-  {
+  { id: 1,
     text: "Обо мне",
     link: '#about'
   },
-  {
+  { id: 2 ,
     text: "Услуги и цены",
     link: '#services'
   },
-  {
+  {id:3,
     text: "Контакты",
     link: '#contacts'
   }
@@ -20,9 +20,10 @@ const navItems = [
 
 function NavigationSite() {
   return (
-    <ul className='nav__list'>
+    <ul className='nav__list' >
       { navItems.map(navItem => (
         < NavigationItem
+            key = {navItem.key}
             text = {navItem.text}
             link = {navItem.link}
             isClassLi = {'nav__item'}

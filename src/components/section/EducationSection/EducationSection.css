@@ -1,9 +1,12 @@
 .education {
   margin-bottom: 24px;
   padding-top: 48px;
-  background-image: url(/education-fone.svg);
+  
   background-repeat: no-repeat;
   background-position: center;
+}
+.education__inner {
+  display: flex;
 }
 .education-wrapper {
   padding: 34px 0 97px 168px; 

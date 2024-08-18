@@ -10,7 +10,7 @@ function OnlineСourse(props) {
     <div className='course-box'>
           
       <h2 className="course-text course-text-bold">
-         Неуверенные в себе люди
+         Неуверенные люди
       </h2>
       <p className='course-text'>
       не просят повышения зарплаты,

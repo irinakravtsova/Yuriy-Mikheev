@@ -26,7 +26,8 @@ function EducationSection() {
       </div> */}
 
        
-      
+      <div className='education__inner'>
+    
           <ul className='education-wrapper'>
             <li className='education-item'>
               <div className='education-info'>
@@ -65,12 +66,12 @@ function EducationSection() {
             <li className='education-item'>
               <div className='education-info'>
                   <p className='education-title'>
-                   Сертифицированный коуч - </p>
+                   Сертифицированный коуч -  учился коучингу у Девида Годсмита и Девида Питерсона (ex коучинг директор Google)</p>
                   <p className='education-text'>
                     Certificate of Foundation of a Great Coaching: Enhanced Level. (USA), Agile Couching Professional, Scrum track (Москва), Accelerating Coaching Experience, Journey to Mastery, WBECS (USA), Accelerating Coaching Experience. WBECS (USA), Coaching in organization and business. Core competencies of professional coaching, ICA (Москва), MBTI® Certified Ernst & Yung (UK)
                   </p>
                   <p className='education-text'>
-                    Учился коучингу у Девида Годсмита и Девида Питерсона (ex коучинг директор Google)
+                   
                   </p>            
               </div>
               <div className='education-image-wrapper'>
@@ -104,7 +105,9 @@ function EducationSection() {
 
         
           </ul>
-        
+
+     
+          </div>  
    
     </section>
     

@@ -7,6 +7,8 @@ import FirstConsultation from './components/main/FirstСonsultation/FirstConsult
 import AboutMe from './components/section/AboutMeSection/AboutMe'
 import EducationSection from './components/section/EducationSection/EducationSection'
 import OnlineСourse from './components/main/onlineСourse/onlineСourse'
+import Science from './components/section/Science/Science'
+import Review from './components/section/Reviews/Reviews'
 
 
 
@@ -25,6 +27,8 @@ function App() {
           <FirstConsultation />
           < AboutMe />
           < EducationSection />
+          < Science />
+          < Review />
        
 
           </main>

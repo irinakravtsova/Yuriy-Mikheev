@@ -1,0 +1,91 @@
+.science {
+  margin-bottom: 100px;
+  background-image: url(/education-fone.svg);
+  background-repeat: no-repeat;
+  position: relative;
+}
+.science__title {
+  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 85px;
+ 
+}
+.science__title-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 106%;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+.science__title-title::before {
+ 
+  content: "";
+  position: absolute;
+  top: 92px;
+  left: 76px;
+  display: block;
+  width: 148px;
+  height: 8px;
+  background-color: #FDC221;
+  z-index: -5;
+}
+.science__inner {
+
+  display: flex;
+  gap: 43px;
+  padding-left: 155px;
+}
+
+.science__controls {
+  position: absolute;
+  display: flex;
+  gap: 15px;
+  bottom: 10px;
+  left: 50px;
+ }
+ .science__contriol-next {
+    background-image: url(/src/assets/controller-next.svg);
+ }
+ .science__contriol-prev {
+  background-image: url(/src/assets/controller-next.svg);
+  transform: rotate(180deg);
+}
+ .science__contriol-next,
+ .science__contriol-prev {
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  border: none;
+  /* background: none; */
+  background-repeat: no-repeat;
+  background-position: center;
+ }
+
+ .science__box {
+  width: 419px;
+ height: 365px;
+ padding: 24px 14px 35px 14px;
+ background-color: white;
+ border-radius: 10px;
+  
+ }
+ .science__slide {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+ }
+ .science__image {
+  max-height: 164px;
+ }
+.aboutme-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 106%;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+.science__text {
+  font-weight: 700;
+font-size: 24px;
+line-height: 146%;
+}
