@@ -6,6 +6,8 @@ import './data'
 import Quote from '../../../assets/кавычки.svg'
 import Line from '../../../assets/review.svg'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { IconButton } from '../../Slide/IconButton/IconButton';
+import { Slider } from '../../Slide/Slider/Slaider';
 
 
 
@@ -44,25 +46,45 @@ function Review() {
   },
   ];
 
-  const [people, setPeople] = useState(data);
+
+
+  // const [people, setPeople] = useState(data);
   const [curentIndex, setCurentIndex] = useState(0);
 
+  const prev = () => {
+    setCurentIndex(curentIndex => {
+      if (curentIndex > 0) {
+        return curentIndex - 1
+      }
+      return curentIndex
+    })
+  }
+
+  const next = () => {
+    setCurentIndex(curentIndex => {
+      if (curentIndex < data.length - 1) {
+        return curentIndex + 1
+      }
+      return curentIndex
+    })
+  }
 
   
 useEffect(() => {
-  const lastIndex = people.length - 1;
+  const lastIndex = data.length - 1;
   if (curentIndex <0) {
     setCurentIndex(lastIndex)
   }
-}, [curentIndex, people]); 
+}, [curentIndex, data]); 
 
 useEffect(() => {
-  const lastIndex = people.length - 1;
+  const lastIndex = data.length - 1;
   if (curentIndex > lastIndex) {
     setCurentIndex(0)
   }
-}, [curentIndex, people]); 
- 
+}, [curentIndex, data]); 
+
+
   return (
     <section className='section reviews'>
       <div >
@@ -70,16 +92,17 @@ useEffect(() => {
          Отзывы</h2> 
         <h3 className='heading-h2 reviews__subtitle'>что говорят обо мне клиенты</h3>   
       </div>
+
      
       <div className='section-center'>
-        {people.map((person, personIndex) => {
+        {data.map((person, personIndex) => {
           const {id, name, quote} = person;
           let position = 'nextSlide';
           if (personIndex === curentIndex) {
             position = 'activeSlide';
           }
 
-          if (personIndex === curentIndex - 1 || (curentIndex === 0 && personIndex === people.length - 1)) { //если элемент предпоследний или это первый элемент и его индекс равен количеству всех пользователей в массиве (то есть проверка на то, что у нас всего один элемент в массиве) тогда мы его называем последним 
+          if (personIndex === curentIndex - 1 || (curentIndex === 0 && personIndex === data.length - 1)) { //если элемент предпоследний или это первый элемент и его индекс равен количеству всех пользователей в массиве (то есть проверка на то, что у нас всего один элемент в массиве) тогда мы его называем последним 
             position = 'lastSlide'
           }
 
@@ -91,31 +114,30 @@ useEffect(() => {
               <div className='name'>
                 <img src={Line} className='name__line' alt="" />
               <h4 className='title'>{name}</h4> 
-
-              </div>       
-            
+              </div>         
 
             </article>
           )
             
         }) }
 
-        <button className='prev'
-          onClick={() => setCurentIndex (personIndex = prev - 1)}
-        >
-          {/* < FiChevronLeft /> */}
+        <IconButton
+          direction="left"
+          onClick={prev}
+          disable={curentIndex === 0}
+        />
+        <IconButton
+          direction="right"
+          onClick={next}
+          disable={curentIndex === data.length - 1}
+        />  
 
-        </button>
-
-        <button className='next'
-            onClick={() => setCurentIndex (prev = prevState + 1)}
-        >
-          {/* < FiChevronRight /> */}
-        </button>
-    
+  
         
      
-      </div>  
+      </div> 
+
+ 
    
     </section>
     

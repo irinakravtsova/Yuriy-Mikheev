@@ -14,21 +14,13 @@ function EducationSection() {
  
   return (
     <section className='section education'>
-      <h2 className='education-title-h2'>Моя квалификация</h2>
-      {/* <Heading 
-        level = 'h2'
-        isClassTitle = 'services-title'
-        title ='Моя квалификация' /> */}
-
-        {/* <div className='education-wrapper'>
-
-      < SwiperEducation />
-      </div> */}
-
-       
-      <div className='education__inner'>
+      <div className='education__box'>
+        <div className='education__box-left'>    
+          <h2 className='education-title-h2'>Моя квалификация</h2>
+              
+          <div className='education__inner'>
     
-          <ul className='education-wrapper'>
+           <ul className='education-wrapper'>
             <li className='education-item'>
               <div className='education-info'>
                   <p className='education-title'>Психолог, кандидат психологических наук - </p>
@@ -105,10 +97,27 @@ function EducationSection() {
 
         
           </ul>
-
-     
-          </div>  
-   
+          </div> 
+          </div> 
+          
+          <div className='education__box-right'>
+              <div className='practice'>
+                  <h3 className='course-text'>Мой опыт:</h3>
+                  <ul>
+                    <li className='aboutme-text'>
+                    20+ лет психологического консультирования по личным и профессиональным вопросам,
+                    </li>
+                    <li className='aboutme-text'>
+                    а параллельно с этим коучинг руководителей крупнейших международных и компаний РФ (Яндекс, Beeline, Tele 2, Ростелеком, ПСБ, Газпром, Газпром Нефть, Сбербанк, Danone, Hochland, Nestle, Nokian Tyres, Enel, Tom Tailor, Beiersdorf, Kоmatsu, Honda, Toyota, International Paper, ...)
+                    </li>
+                    <li className='aboutme-text'>
+                    и даже обучение корпоративных коучей
+                    </li>
+                  </ul>
+                  </div>  
+              </div>          
+            
+              </div> 
     </section>
     
   );

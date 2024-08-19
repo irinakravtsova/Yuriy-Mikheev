@@ -1,0 +1,37 @@
+.icon-button {
+  /* position: absolute; */
+  top: 200px;
+  transform: translateY(-50%);
+
+ background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-color: transparent;
+
+  cursor: pointer;
+}
+
+.icon-button.left,
+.icon-button.left.disable {
+  left: 0;
+  background: url('../../../assets/controller-previev.svg') center / 100% 100% no-repeat;
+}
+.icon-button.left:hover {
+
+  background: url('../../../assets/controller_active_prev.svg') center / 100% 100% no-repeat;
+}
+.icon-button.right,
+.icon-button.right.disable {
+  right: 0;
+  background: url('../../../assets/controller-next.svg') center / 100% 100% no-repeat;
+}
+.icon-button.right:hover {
+  background: url('../../../assets/controller_active.svg') center / 100% 100% no-repeat;
+}
+.icon-button.left.disable,
+.icon-button.right.disable {
+  pointer-events: none;
+  opacity: 0.36;
+}

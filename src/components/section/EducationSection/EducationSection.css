@@ -5,11 +5,21 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.education__box {
+  display: flex;
+  gap: 50px;
+}
+.education__box-left {
+  width: 60%;
+} 
+.education__box-right {
+  width: 40%;
+}
 .education__inner {
   display: flex;
 }
 .education-wrapper {
-  padding: 34px 0 97px 168px; 
+  padding: 34px 0 97px 0px; 
   display: flex;
   flex-direction: column;
   gap: 4px;
