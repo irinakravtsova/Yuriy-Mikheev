@@ -9,6 +9,7 @@ import EducationSection from './components/section/EducationSection/EducationSec
 import OnlineСourse from './components/main/onlineСourse/onlineСourse'
 import Science from './components/section/Science/Science'
 import Review from './components/section/Reviews/Reviews'
+import Footer from './components/Footer/Footer'
 
 
 
@@ -16,26 +17,27 @@ function App() {
 
 
   return (
+    <>
     <div className='container'>
         <div className='body-fone'>
           < Header />
           <main>
-          < HeroSection />
-          <OnlineСourse />
-        
-          < ServicesSection />
-          <FirstConsultation />
-          < AboutMe />
-          < EducationSection />
-          < Science />
-          < Review />
-       
-
+            < HeroSection />
+            <OnlineСourse />
+          
+            < ServicesSection />
+            <FirstConsultation />
+            < AboutMe />
+            < EducationSection />
+            < Science />
+            < Review />
           </main>
+         
         
         </div>
     </div>
-
+    < Footer />
+    </>
   )
 }
 

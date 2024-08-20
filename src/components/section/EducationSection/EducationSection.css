@@ -1,9 +1,6 @@
 .education {
-  margin-bottom: 24px;
-  padding-top: 48px;
-  
-  background-repeat: no-repeat;
-  background-position: center;
+  margin-bottom: 178px;
+
 }
 .education__box {
   display: flex;
@@ -11,15 +8,27 @@
 }
 .education__box-left {
   width: 60%;
+
+/* scrollbar-color: black white;  */
 } 
+
+
 .education__box-right {
   width: 40%;
 }
 .education__inner {
+  margin-top: 20px;
   display: flex;
+  height: 270px;
+overflow-y: scroll;
+/* padding-right: 20px; */
+}
+.education__inner::-webkit-scrollbar-thumb {
+  background: #888; /* Элегантный цвет */
+  border-radius: 10px; /* Скругленные уголки для стильного вида */
 }
 .education-wrapper {
-  padding: 34px 0 97px 0px; 
+  padding: 0px 0 97px 0px; 
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -28,13 +37,13 @@
 }
 .education-item {
   display: flex;
-  gap: 50px;
-  align-items: center;
-  /* flex-direction: column; */
-  /* max-width: 250px; */
+  gap: 10px;
+  position: relative;
+  flex-direction: column;
+
 }
 .education-title {
-  font-weight: 700;
+  font-weight: 600;
 font-size: 24px;
 line-height: 146%;
  }
@@ -48,17 +57,25 @@ line-height: 146%;
 
 .education-text {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 146%;
+  font-size: 18px;
+  line-height: 146%; 
+ }
+ /* .education__subtitle {
+  width: 146px;
  }
  .education-image {
   max-width: 68px; 
   transition: transform 0.8s ease;
- 
- }
- .education-image-wrapper {
- 
+  opacity: 0.5; 
+  
+ } */
+ /* .education-image-wrapper { 
   width: 10%;
+ margin: 0 auto;
+ position: absolute;
+  top: 0;
+  right: 50px;
+ 
  }
  .diplom {
   display: flex;
@@ -66,10 +83,17 @@ line-height: 146%;
   gap: 5px;
  }
  .education-image:hover {
-  transform: scale(10);
- }
+  transform: scale(8);
+  opacity: 1;
+ } */
 
- .education-info {
-  max-width: 700px;
+ .practice {
+
+}
+ .prctice__info {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
  }
 

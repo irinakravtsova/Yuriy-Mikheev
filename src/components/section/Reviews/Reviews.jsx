@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import { FaQuoteRight } from 'react-icons/fa';
 import './Reviews.css'
-import './data'
+
 
 import Quote from '../../../assets/кавычки.svg'
 import Line from '../../../assets/review.svg'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { IconButton } from '../../Slide/IconButton/IconButton';
 import { Slider } from '../../Slide/Slider/Slaider';
+import { IconButtonReviews } from './IconButtonReviews';
 
 
 
@@ -121,26 +122,21 @@ useEffect(() => {
             
         }) }
 
-        <IconButton
+        <IconButtonReviews
+          cls = 'reviews__button-prev'
           direction="left"
           onClick={prev}
           disable={curentIndex === 0}
         />
-        <IconButton
+        <IconButtonReviews
+          
           direction="right"
           onClick={next}
           disable={curentIndex === data.length - 1}
-        />  
-
-  
-        
+        />     
      
-      </div> 
-
- 
-   
-    </section>
-    
+      </div>   
+    </section>    
   );
 }
 

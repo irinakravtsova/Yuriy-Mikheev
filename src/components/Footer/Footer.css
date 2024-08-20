@@ -1,0 +1,64 @@
+.footer {
+  background-image: url(../../assets/footer.svg);
+  background-repeat: no-repeat;
+ height: 453px;
+  width: 1400px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-top: 66px;
+
+}
+.footer__info {
+ 
+
+}
+.footer-title {
+margin-bottom: 15px;
+  font-weight: 700;
+font-size: 28px;
+letter-spacing: 0.01em;
+color: #fff;
+}
+.footer-INN {
+  font-weight: 400;
+font-size: 16px;
+line-height: 159%;
+letter-spacing: 0.02em;
+color: #fff;
+}
+.footer-input-title {
+  margin-top: 24px;
+  font-weight: 600;
+font-size: 16px;
+line-height: 159%;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #fff;
+}
+.footer-input-text {
+  margin-top: 15px;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  padding-left: 13px;
+
+  font-weight: 400;
+font-size: 16px;
+line-height: 159%;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #fff;
+border: 2px solid white;
+}
+.footer-input-button {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 143px;
+  text-align: center;
+  font-weight: 600;
+font-size: 16px;
+line-height: 159%;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #000;
+background-color: #fff;
+}

@@ -1,3 +1,6 @@
+.aboutme {
+  margin-bottom: 86px;
+}
 .aboutme-title {
   font-weight: 700;
   font-size: 48px;
@@ -31,9 +34,6 @@ color: rgba(51, 27, 59, 0.66);
   align-items: baseline;
 }
 .aboutme-info {
-  margin-top: 80px;
+  margin-top: 140px;
   width: 50%;
-}
-.practice {
-  margin-top: 20px;
 }

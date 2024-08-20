@@ -1,5 +1,5 @@
 .science {
-  margin-bottom: 100px;
+  margin-bottom: 178px;
   background-image: url(/education-fone.svg);
   background-repeat: no-repeat;
   position: relative;
@@ -47,8 +47,8 @@
     background-image: url(/src/assets/controller-next.svg);
  }
  .science__contriol-prev {
-  background-image: url(/src/assets/controller-next.svg);
-  transform: rotate(180deg);
+  background-image: url(/src/assets/controller-previev.svg);
+
 }
  .science__contriol-next,
  .science__contriol-prev {
@@ -60,6 +60,15 @@
   background-repeat: no-repeat;
   background-position: center;
  }
+ .science__contriol-next:hover,
+ .science__contriol-prev:hover {
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #dfdce0;
+  padding: 6px 10px 6px 10px;
+ }
+
 
  .science__box {
   width: 419px;

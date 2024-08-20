@@ -21,73 +21,55 @@ function EducationSection() {
           <div className='education__inner'>
     
            <ul className='education-wrapper'>
-            <li className='education-item'>
-              <div className='education-info'>
-                  <p className='education-title'>Психолог, кандидат психологических наук - </p>
-                  <p className='education-text'>
-                    Санкт-Петербургский Государственный Университет
-                  </p>
-                  <p className='education-text'>
-                    Закончил, защитил диссертацию и 9 лет преподавал в Санкт-Петербургском Государственном Университете, Факультет Психологии
-                  </p> 
-              </div>
-              <div className='education-image-wrapper diplom'>
-                  <img src={E1} className='education-image' alt="" />
-                  <img src={E2} className='education-image' alt="" />  
-              </div>
-            
-                      
-            </li>
-            <li className='education-item' >
-              <div className='education-info'>
-                  <p className='education-title'>
-                  Сертифицированный гештальт-терапевт - </p>
-                  <p className='education-text'>
-                    ИИГТ (Санкт-Петербург),
-                  </p>
-                  <p className='education-text'>
-                  Мифологическое мышление, полярности картины мира и метафоры жизни, Елена Петрова и Михаил Чегодаев
-                  </p>            
-              </div>
-              <div className='education-image-wrapper'>
-                  <img src={E3} className='education-image' alt="" />
-              </div>           
+          
              
-            </li>
-
             <li className='education-item'>
               <div className='education-info'>
                   <p className='education-title'>
-                   Сертифицированный коуч -  учился коучингу у Девида Годсмита и Девида Питерсона (ex коучинг директор Google)</p>
+                  Психолог, кандидат психологических наук </p>
+                  <p className='education-text '>
+                        Санкт-Петербургский Государственный Университет
+                      </p> 
                   <p className='education-text'>
-                    Certificate of Foundation of a Great Coaching: Enhanced Level. (USA), Agile Couching Professional, Scrum track (Москва), Accelerating Coaching Experience, Journey to Mastery, WBECS (USA), Accelerating Coaching Experience. WBECS (USA), Coaching in organization and business. Core competencies of professional coaching, ICA (Москва), MBTI® Certified Ernst & Yung (UK)
-                  </p>
-                  <p className='education-text'>
-                   
-                  </p>            
-              </div>
-              <div className='education-image-wrapper'>
-                 <img src={E4} className='education-image' alt="" />
-              </div>
-           
-             
+                  Закончил, защитил диссертацию и 9 лет преподавал в Санкт-Петербургском Государственном Университете, Факультет Психологии
+                  </p>  
+              </div>                            
             </li>
-
+    
             <li className='education-item'>
-              <div>
+              <div className='education-info'>
                   <p className='education-title'>
-                  Сертифицированный бизнес-тренер - </p>
+                  Сертифицированный гештальт-терапевт </p>
+                  <p className='education-text '>
+                  ИИГТ (Санкт-Петербург)</p> 
+                  <p className='education-text'>
+                  Мифологическое мышление, полярности картины мира и метафоры жизни, Елена Петрова и Михаил Чегодаев</p> 
+              </div>                            
+            </li>
+        
+            <li className='education-item'>
+              <div className='education-info'>
+                  <p className='education-title'>
+                  Сертифицированный коуч -  учился коучингу у Девида Годсмита и Девида Питерсона (ex коучинг директор Google) </p>
+                  <p className='education-text'>
+                  Certificate of Foundation of a Great Coaching: Enhanced Level. (USA), Agile Couching Professional, Scrum track (Москва), Accelerating Coaching Experience, Journey to Mastery, WBECS (USA), Accelerating Coaching Experience. WBECS (USA), Coaching in organization and business. Core competencies of professional coaching, ICA (Москва), MBTI® Certified Ernst & Yung (UK)
+                  </p>  
+              </div>                            
+            </li>
+            <li className='education-item'>
+              <div className='education-info'>
+                  <p className='education-title'>
+                  Сертифицированный бизнес-тренер </p>
                   <p className='education-text'>
                   Experiential Learning, MTa Learning (UK)
-                  </p>
-              </div>
-                             
+                  </p>  
+              </div>                            
             </li>
 
             <li className='education-item'>
               <div className='education-info'>
                   <p className='education-title'>
-                  Фасилитатор командных сессий - </p>
+                  Фасилитатор командных сессий </p>
                   <p className='education-text'>
                   Advanced Facilitator. Pinpoint Facilitation Limited (UK), Pinpoint Facilitator , Pinpoint Facilitation Limited (UK)
                   </p>  
@@ -102,16 +84,16 @@ function EducationSection() {
           
           <div className='education__box-right'>
               <div className='practice'>
-                  <h3 className='course-text'>Мой опыт:</h3>
-                  <ul>
-                    <li className='aboutme-text'>
+                  <h3 className='course-text'>Мой опыт</h3>
+                  <ul className='prctice__info'>
+                    <li className='education-text'>
                     20+ лет психологического консультирования по личным и профессиональным вопросам,
                     </li>
-                    <li className='aboutme-text'>
+                    <li className='education-text'>
                     а параллельно с этим коучинг руководителей крупнейших международных и компаний РФ (Яндекс, Beeline, Tele 2, Ростелеком, ПСБ, Газпром, Газпром Нефть, Сбербанк, Danone, Hochland, Nestle, Nokian Tyres, Enel, Tom Tailor, Beiersdorf, Kоmatsu, Honda, Toyota, International Paper, ...)
                     </li>
-                    <li className='aboutme-text'>
-                    и даже обучение корпоративных коучей
+                    <li className='education-text'>
+                    и обучение корпоративных коучей
                     </li>
                   </ul>
                   </div>  
