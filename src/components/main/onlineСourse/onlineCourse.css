@@ -20,6 +20,13 @@ font-weight: 600;
 line-height: 150%;
 letter-spacing: -0.87px;
 }
+.firstconsultation-text {
+  margin-top: 14px;
+  font-size: 37px;
+font-weight: 700;
+line-height: 99.8%;
+letter-spacing: -0.87px;
+}
 
 .course-text-bold {
   font-size: 32px;
@@ -30,5 +37,26 @@ letter-spacing: -0.87px;
 font-weight: 700;
 line-height: 99.8%;
 letter-spacing: -0.87px;
+}
+
+@media (max-width: 541px) {
+  .course-box { 
+    border: 2px solid #FDC221; 
+  max-width: 800px;;
+   padding: 4px;
+   margin: 0px 0 24px 0;   
+  }
+  .course-text {
+      font-size: 18px; 
+  }  
+  .course-text-bold {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .firstconsultation-text {
+    margin-top: 14px;
+    font-size: 24px;
+
+}
 }
 

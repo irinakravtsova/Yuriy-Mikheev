@@ -2,7 +2,7 @@
   background-image: url(../../assets/footer.svg);
   background-repeat: no-repeat;
  height: 453px;
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
   padding-left: 50px;
   padding-top: 66px;

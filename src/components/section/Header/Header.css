@@ -14,8 +14,6 @@
   gap: 20px;
  }
 
-
-
 .burger {
   position: fixed;
   top: 0;
@@ -154,8 +152,8 @@
 
 @media (max-width: 541px) {
   .header {
-    margin-top: 30px;
-    margin-bottom: 62px;
+    margin-top: 40px;
+    margin-bottom: 50px;
   }
   .logo__link {
     width: 96px;

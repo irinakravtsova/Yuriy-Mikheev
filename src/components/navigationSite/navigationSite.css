@@ -38,3 +38,9 @@ vertical-align: top;
   background-repeat: no-repeat;
 }
 
+@media (max-width: 961px) {
+  .nav__list {
+    display: none;
+  }
+}
+

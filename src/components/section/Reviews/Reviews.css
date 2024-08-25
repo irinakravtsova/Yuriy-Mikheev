@@ -29,11 +29,11 @@
   z-index: -5;
 }
 
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
   .reviews {
     width: 95vw;
   }
-}
+} */
 /*
 =============== 
 Slider

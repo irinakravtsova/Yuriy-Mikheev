@@ -8,7 +8,7 @@ const navItems = [
     link: '#about'
   },
   { id: 2 ,
-    text: "Услуги и цены",
+    text: "Услуги",
     link: '#services'
   },
   {id:3,

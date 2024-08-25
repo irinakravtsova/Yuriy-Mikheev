@@ -36,7 +36,8 @@ import SwiperServices from '../../main/Swiper/SwiperServices';
 function ServicesSection() {
  
   return (
-    <section className='services section'>
+    <section className='services section'
+              id='services'>
       <Heading 
         level = 'h2'
         isClassTitle = 'services-title'

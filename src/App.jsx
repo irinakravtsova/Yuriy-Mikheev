@@ -31,8 +31,7 @@ function App() {
             < EducationSection />
             < Science />
             < Review />
-          </main>
-         
+          </main>        
         
         </div>
     </div>

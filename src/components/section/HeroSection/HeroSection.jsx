@@ -15,12 +15,26 @@ function HeroSection() {
           title = 'Я помогу вам'
           isClassSubtitle={'hero-subtitle'}
           subtitle= 'обрести уверенность  в жизни и на работе'
-         />  
+         /> 
+
          <ImageBox 
           image= {Banana}
           isClassImage = 'hero-image'
           isAlt = 'Yuri Mickheev' />  
-        </div>                  
+        </div> 
+        <div className="hero-about">
+        <p className='text-about'>
+          кандидат психологических наук,<br></br>
+          сертифицированный гештальт-терапевт,<br></br>
+          сертифицированный коуч.<br></br> 
+              
+        </p>
+      <div className="box-about">
+
+      </div>
+      <p className='text-about text-about-metod'>
+        Использую в работе только научно обоснованные методы и технологии</p>
+     </div>                    
   </section>
 
  

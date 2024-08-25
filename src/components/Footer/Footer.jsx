@@ -5,7 +5,8 @@ import './Footer.css'
 
 function Footer() {
   return (
-    <footer className='footer'>
+    <footer className='footer'
+            id='contacts'>
       <div className="footer__info">
         <h2 className='footer-title'>Михеев Юрий Александрович</h2>
         <p className='footer-INN'>ИНН - 781702316462</p>
