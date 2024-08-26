@@ -15,7 +15,7 @@ function AboutMe() {
   return (
    <section className='section aboutme'
               id='about'>
-      <div className='section-wrapper'>
+      <div className='section-wrapper aboutme-wrapper'>
          <ImageBox 
             image= {Component}
             isClassImage = 'aboutme-image'

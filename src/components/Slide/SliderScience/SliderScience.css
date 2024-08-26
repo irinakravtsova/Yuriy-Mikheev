@@ -62,3 +62,16 @@
 .slide__science__link.active {
 pointer-events: painted;
 }
+
+@media (max-width: 541px) {
+  .slide__science {
+    width: 64px;
+    max-height: 280px;
+    padding: 12px;    
+    height: 50vw;   
+  }
+  .slide__title-science {
+    font-size: 12px; 
+  }
+}
+

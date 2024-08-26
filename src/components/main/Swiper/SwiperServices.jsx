@@ -15,7 +15,7 @@ import Picture6 from '../../../assets/изменения.jpg'
 
 export default function SwiperServices() {
   return (
-    <>
+    <div className='swiper-servis'> 
      <Swiper
        slidesPerView={2}
        spaceBetween={50} 
@@ -51,6 +51,6 @@ export default function SwiperServices() {
         
         
       </Swiper>
-    </>
+    </div>
   );
 }

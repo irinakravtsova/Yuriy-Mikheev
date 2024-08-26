@@ -43,7 +43,7 @@ letter-spacing: -0.87px;
   .course-box { 
     border: 2px solid #FDC221; 
   max-width: 800px;;
-   padding: 4px;
+   padding: 6px 6px 10px 6px;
    margin: 0px 0 24px 0;   
   }
   .course-text {
@@ -56,7 +56,10 @@ letter-spacing: -0.87px;
   .firstconsultation-text {
     margin-top: 14px;
     font-size: 24px;
-
+}
+.brend {
+  margin-top: 0px;
+  font-size: 25px;
 }
 }
 

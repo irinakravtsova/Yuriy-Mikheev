@@ -60,40 +60,51 @@ line-height: 146%;
   font-size: 18px;
   line-height: 146%; 
  }
- /* .education__subtitle {
-  width: 146px;
- }
- .education-image {
-  max-width: 68px; 
-  transition: transform 0.8s ease;
-  opacity: 0.5; 
-  
- } */
- /* .education-image-wrapper { 
-  width: 10%;
- margin: 0 auto;
- position: absolute;
-  top: 0;
-  right: 50px;
  
- }
- .diplom {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
- }
- .education-image:hover {
-  transform: scale(8);
-  opacity: 1;
- } */
 
- .practice {
-
-}
  .prctice__info {
   margin-top: 28px;
   display: flex;
   flex-direction: column;
   gap: 12px;
+ }
+
+ @media (max-width: 541px) {
+  .education {
+    margin-bottom: 28px;  
+  }
+  .education__box {    
+    flex-direction: column;
+    gap: 18px;
+  }
+  .education__box-left {
+    width: 100%;
+  }  
+  
+  .education__box-right {
+    width: 100%;
+  }
+  .education__inner {
+    margin-top: 14px;
+    display: flex;
+    height: 270px;
+  overflow-y: scroll;
+ 
+  }
+  .education-wrapper {
+    padding: 0px 0 97px 0px; 
+    gap: 10px;   
+  }
+  .education-title-h2 {  
+    font-size: 24px;   
+   }
+   .education-title {
+    font-size: 18px;
+  line-height: 116%;
+   }
+   .education-text {  
+    font-size: 16px;
+  
+   }
  }
 

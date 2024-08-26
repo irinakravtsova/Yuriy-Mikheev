@@ -84,7 +84,7 @@ function EducationSection() {
           
           <div className='education__box-right'>
               <div className='practice'>
-                  <h3 className='course-text'>Мой опыт</h3>
+                  <h3 className='education-title-h2'>Мой опыт</h3>
                   <ul className='prctice__info'>
                     <li className='education-text'>
                     20+ лет психологического консультирования по личным и профессиональным вопросам,

@@ -11,11 +11,15 @@ font-weight: 700;
 line-height: 99.8%;
 letter-spacing: -0.87px;
 }
+
+
+@media (max-width: 541px) {
 .brend {
-  margin-top: 28px;
-  font-size: 37px;
-font-weight: 700;
-line-height: 99.8%;
-letter-spacing: -0.87px;
+  margin-top: 0px;
+  font-size: 25px;
+}
+.firstconsultation-box {
+  margin-bottom: 0px; 
+}
 }
 
