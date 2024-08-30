@@ -15,6 +15,22 @@ function EducationSection() {
   return (
     <section className='section education'>
       <div className='education__box'>
+      <div className='education__box-right'>
+              <div className='practice'>
+                  <h3 className='education-title-h2'>Мой опыт</h3>
+                  <ul className='prctice__info'>
+                    <li className='education-text'>
+                    20+ лет психологического консультирования по личным и профессиональным вопросам,
+                    </li>
+                    <li className='education-text'>
+                    а параллельно с этим коучинг руководителей крупнейших международных и компаний РФ (Яндекс, Beeline, Tele 2, Ростелеком, ПСБ, Газпром, Газпром Нефть, Сбербанк, Danone, Hochland, Nestle, Nokian Tyres, Enel, Tom Tailor, Beiersdorf, Kоmatsu, Honda, Toyota, International Paper, ...)
+                    </li>
+                    <li className='education-text'>
+                    и обучение корпоративных коучей
+                    </li>
+                  </ul>
+                  </div>  
+              </div>  
         <div className='education__box-left'>    
           <h2 className='education-title-h2'>Моя квалификация</h2>
               
@@ -82,22 +98,7 @@ function EducationSection() {
           </div> 
           </div> 
           
-          <div className='education__box-right'>
-              <div className='practice'>
-                  <h3 className='education-title-h2'>Мой опыт</h3>
-                  <ul className='prctice__info'>
-                    <li className='education-text'>
-                    20+ лет психологического консультирования по личным и профессиональным вопросам,
-                    </li>
-                    <li className='education-text'>
-                    а параллельно с этим коучинг руководителей крупнейших международных и компаний РФ (Яндекс, Beeline, Tele 2, Ростелеком, ПСБ, Газпром, Газпром Нефть, Сбербанк, Danone, Hochland, Nestle, Nokian Tyres, Enel, Tom Tailor, Beiersdorf, Kоmatsu, Honda, Toyota, International Paper, ...)
-                    </li>
-                    <li className='education-text'>
-                    и обучение корпоративных коучей
-                    </li>
-                  </ul>
-                  </div>  
-              </div>          
+              
             
               </div> 
     </section>

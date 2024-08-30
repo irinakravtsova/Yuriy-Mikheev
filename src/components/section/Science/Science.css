@@ -98,11 +98,17 @@
 font-size: 24px;
 line-height: 146%;
 }
+@media (max-width: 961px) {
+  .science {
+    margin-bottom: 92px; 
+  }
+  .science__title-title { 
+    font-size: 44px;  
+  }
+}
 
 @media (max-width: 541px) {
-  .science {
-    margin-bottom: 64px; 
-  }
+ 
   .science__title {
     margin-bottom: 28px;   
   }

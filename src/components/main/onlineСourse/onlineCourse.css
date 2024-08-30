@@ -38,6 +38,14 @@ font-weight: 700;
 line-height: 99.8%;
 letter-spacing: -0.87px;
 }
+@media (max-width: 961px) {
+  .course-box { 
+    border: 3px solid #FDC221; 
+
+   padding: 6px 6px 10px 6px;
+   margin: 26px 0 26px 0;   
+  }
+}
 
 @media (max-width: 541px) {
   .course-box { 

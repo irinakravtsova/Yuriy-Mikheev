@@ -28,13 +28,17 @@ text-transform: uppercase;
  width: 247px;
  
 }
-
+@media (max-width: 961px) {
+  .services {   
+    padding-top: 56px; 
+}
+.services-wrapper {
+  padding: 40px 40px 40px 90px;
+ }
+}
 @media (max-width: 541px) {
-  .services {
-  margin-bottom: 24px;
+  .services { 
   padding-top: 16px;
-  background-image: url(/ServicesSection.svg);
-  background-repeat: no-repeat;
 }
 
   .services-wrapper {

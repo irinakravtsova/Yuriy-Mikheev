@@ -90,8 +90,7 @@ letter-spacing: -0.48px;
   font-weight: 700;
   font-size: 20px;
   line-height: 100%;
-  letter-spacing: 0.64px;
-  
+  letter-spacing: 0.64px;  
 }
 
 
@@ -100,6 +99,10 @@ letter-spacing: -0.48px;
     width: 100%;
     padding: 0 15px 0 15px;
     position: relative;
+   }
+   .heading-h1 {
+    font-size: 48px;
+   font-weight: 600;
    }
    .title {
      font-size: 45px;
@@ -111,6 +114,10 @@ letter-spacing: -0.48px;
       line-height: 23px;
       letter-spacing: -0.54px;
    }
+   .heading-h2 {    
+    font-size: 44px;
+    font-weight: 600;
+  }
 }
 
 

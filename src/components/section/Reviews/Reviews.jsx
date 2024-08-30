@@ -88,14 +88,16 @@ useEffect(() => {
 
   return (
     <section className='section reviews'>
-      <div >
+      <div className='review-title'>
         <h2 className='heading-h2'>
          Отзывы</h2> 
         <h3 className='heading-h2 reviews__subtitle'>что говорят обо мне клиенты</h3>   
       </div>
+     
 
      
       <div className='section-center'>
+      <img src={Quote} alt="" className='quote' />  
         {data.map((person, personIndex) => {
           const {id, name, quote} = person;
           let position = 'nextSlide';
@@ -109,7 +111,7 @@ useEffect(() => {
 
           return (
             <article className={position} key={id}>
-               <img src={Quote} alt="" className='quote' />  
+               
                          
               <p className='text'>{quote}</p>
               <div className='name'>
@@ -121,21 +123,26 @@ useEffect(() => {
           )
             
         }) }
-
-        <IconButtonReviews
-          cls = 'reviews__button-prev'
-          direction="left"
-          onClick={prev}
-          disable={curentIndex === 0}
-        />
-        <IconButtonReviews
-          
-          direction="right"
-          onClick={next}
-          disable={curentIndex === data.length - 1}
-        />     
+  
+         <div className='icon-buttons-box'>
+            <IconButtonReviews
+              cls = 'reviews__button-prev'
+              direction="left"
+              onClick={prev}
+              disable={curentIndex === 0}
+            />
+            <IconButtonReviews
+              
+              direction="right"
+              onClick={next}
+              disable={curentIndex === data.length - 1}
+            />     
      
-      </div>   
+        </div>  
+    
+      </div> 
+
+ 
     </section>    
   );
 }

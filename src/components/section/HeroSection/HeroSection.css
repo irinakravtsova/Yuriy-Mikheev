@@ -52,17 +52,25 @@ letter-spacing: -0.87px;
    line-height: 47px;
  letter-spacing: -1.2px;   
 } 
-
+.hero-subtitle {
+font-size: 30px;
+}
   .hero-image {
-
+    max-width: 500px;     
+  }
+}
+@media (max-width: 800px) {
+  .hero-image {
+    max-width: 400px; 
+    width: 100%;    
   }
 }
 
-@media (max-width: 541px) {
+
+@media (max-width: 650px) {
 
   .hero-image {
-  max-width: 400px;
-   
+  max-width: 400px;   
   }
   .hero-title {
     font-size: 32px;

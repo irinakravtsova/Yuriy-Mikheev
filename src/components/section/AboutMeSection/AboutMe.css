@@ -32,27 +32,46 @@ color: rgba(51, 27, 59, 0.66);
 .aboutme-image {
   max-width: 670px;
   align-items: baseline;
+  width: 100%;
 }
 .aboutme-info {
   margin-top: 140px;
   width: 50%;
+}
+@media (max-width: 961px) {
+  .aboutme-image {
+    max-width: 550px;
+    width: 100%;  
+  } 
+  .aboutme-info {
+    margin-top: 32px;
+    width: 100%;
+  }
+  .aboutme-title {  
+    font-size: 44px;    
+  }
+}
+@media (max-width: 961px) {
+  .aboutme-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutme-info {
+    margin-top: 0px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 541px) {
   .aboutme {
     margin-bottom: 28px;
   }
-  .aboutme-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
+
   .aboutme-image {
     max-width: 370px;  
   } 
-  .aboutme-info {
-    margin-top: 0px;
-    width: 100%;
-  }
+
   .aboutme-title {  
     font-size: 28px;    
   }

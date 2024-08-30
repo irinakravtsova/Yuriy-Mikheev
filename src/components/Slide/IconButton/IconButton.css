@@ -43,3 +43,12 @@
   pointer-events: none;
   opacity: 0.36;
 }
+
+@media (max-width: 541px) {
+  .icon-button {
+
+    width: 35px;
+    height: 35px;
+   
+  }
+}

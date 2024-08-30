@@ -4,6 +4,7 @@ import './Header.css'
 import Navigation from '../../Navigation/Navigation';
 import LogoLink from '../../LogoLink/LogoLink';
 import HeaderContact from '../../HeadeContact/HeaderContact';
+import Burger from '../burger/burger';
 
 function Header() {
   return (
@@ -12,10 +13,15 @@ function Header() {
         <div className='header-wrapper'>
           < Navigation />
           < LogoLink />
-          < HeaderContact />
+          < HeaderContact />        
+
         </div>
+       
       
       </div>
+      <div className="js-burger burger">
+        <Burger />
+        </div>
     
      </header>
      
