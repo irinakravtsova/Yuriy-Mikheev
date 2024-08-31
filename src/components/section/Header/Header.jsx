@@ -7,16 +7,12 @@ import Navigation from '../../Navigation/Navigation';
 import LogoLink from '../../LogoLink/LogoLink';
 import HeaderContact from '../../HeadeContact/HeaderContact';
 import Burger from '../../burger/burger';
+import Close from '../../../assets/Close.svg'
 
-function Header() {
-  const [burger, setBurger] = useState('burger');
-
-  function burgerClickOpen () {
-    console.log('click');
-    
-  }
-
+function Header() {  
+  const [burgerActive, setBurgerActive] = useState(false);
   return (
+    <>
     <header className='header'>
        <div className='header-wrapper'>
           < Navigation />
@@ -24,15 +20,21 @@ function Header() {
           < HeaderContact />
 
         </div> 
-        <button className="js-burger-btn burger-btn" onClick={burgerClickOpen} >
+        <button className='burger-btn'
+                onClick={() => setBurgerActive(!burgerActive)} 
+                >
               <span className="burger_line long"></span>
               <span className="burger_line"></span>
-            </button>
-        <Burger 
-      />
-
+        </button>
     </header> 
-     
+    <div className= {burgerActive ? 'burger burger_open' : 'burger'}
+         onClick={() => setBurgerActive(false)}>
+        <Burger 
+        active = {burgerActive}
+        setActive = {setBurgerActive}
+         />
+        </div>
+    </>     
   );  
 }
 

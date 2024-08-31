@@ -1,9 +1,13 @@
 import React from 'react'
-import LinkButton from '../../linkButton/linkButton';
+import { useState } from 'react';
 import './FirstConsultation.css'
+import '../../popup/popup.css'
 import Brand from '../Brand/Brand';
+import Popup from '../../popup/popap';
 
 function FirstConsultation(props) {
+  const [popupActive, setPopupActive] = useState(false);
+
 
   return (
    <div className='firstconsultation-box'>
@@ -12,10 +16,22 @@ function FirstConsultation(props) {
          text = 'Помощь с заботой и уважением'/>
       <div >        
             <h3 className= 'firstconsultation-text'>первая встреча бесплатно</h3>
-            < LinkButton 
-               isClass = {'hero__info-button'}
-               text = 'Записаться'      
-            />
+            <div className='hero__info-button'
+                 onClick={() => setPopupActive(!popupActive)} >
+               Записаться
+            </div>
+            <div className= {popupActive ? 'popup popup_open' : 'popup'}
+                   onClick={() => setPopupActive(false)}>
+                   < Popup
+                     active = {popupActive}
+                     setActive = {setPopupActive} />
+     
+        </div>
+            
+           
+           
+         
+        
        </div>
 
    </div>

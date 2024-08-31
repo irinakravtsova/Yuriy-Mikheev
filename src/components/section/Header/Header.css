@@ -27,16 +27,18 @@
   opacity: 0;
   visibility: hidden;
   transition: position 0.5s ease;
+  /* transition: translateX(100%); */
 }
 .burger-btn {
  position: absolute;
   right: 10px;
   top: 31px;
-  z-index: 2000;
+  /* z-index: 2000; */
 }
 .burger_open {
   opacity: 1;
   visibility: visible;  
+  /* transition: translateX(0%); */
 }
 .logo-link-burger {
   margin-top: 40px;
@@ -71,6 +73,9 @@
 
 .burger_open .burger__content {
   transform: translateX(0);
+}
+.burger__logo {
+  display: flex;
 }
 
 .burger-nav {
@@ -147,14 +152,15 @@
   }
   .burger-btn_open {
     position: absolute;
-    top: -12px;
-    right: 3px;
+    top: 16px;
+    right: 24px;
     width: 34px;
-    height: 34px;
-    background-size: 100%;
-    background-image: url(кнопка_закрыть.png);
-    background-position: center;
-    cursor: pointer;
+    height: 34px;  
+    cursor: pointer;  
+  }
+  .burger-btn_open:hover {
+ background-color: #dedcdf;
+ border-radius: 50%; 
   }
   .burger-btn_open .burger_line {
     display: none;

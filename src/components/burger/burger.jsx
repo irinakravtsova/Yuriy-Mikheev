@@ -1,17 +1,27 @@
 import React from 'react'
+import { useState } from 'react';
 import '../section/Header/Header.css'
+import Close from '../../assets/Close.svg'
 
-function Burger() {
+function Burger(props) {
+ 
+
   return (
-    <div className="js-burger burger ">
+   
       <div className=" burger__content">
-         <a className="logo-link logo-link-burger" href="#">
-       
-          <p className='logo__title logo-link-burger'>Юрий Михеев</p>
+        <div className='burger__logo'>
 
+        </div>
+         <a className="logo-link logo-link-burger" href="#">
+           <p className='logo__title logo-link-burger'>Юрий Михеев</p>
          </a> 
+         <button className='burger-btn_open'
+                 >
+          <img src={Close} alt="Кнопка закрыть меню" />
+         </button>
        
-         <nav className="burger-nav">
+         <nav className="burger-nav"
+              onClick={e => e.stopPropagation()}>
            <ul>
             <li>
              <a className="burger-nav__link" href="#about">обо мне</a>
@@ -40,8 +50,8 @@ function Burger() {
         
           </div>
        </div>
-  </div>
-  // </div>
+
+
 
 
   );

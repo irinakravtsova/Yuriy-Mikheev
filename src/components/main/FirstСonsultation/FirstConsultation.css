@@ -12,7 +12,13 @@ line-height: 99.8%;
 letter-spacing: -0.87px;
 }
 
-
+@media (max-width: 961px) {
+  .firstconsultation-text {
+  
+    font-size: 32px;
+ 
+  }
+}
 @media (max-width: 541px) {
 .brend {
   margin-top: 0px;

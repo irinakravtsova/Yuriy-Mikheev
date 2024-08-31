@@ -2,16 +2,17 @@
   display: flex;
   justify-content: center;
 }
-.course-box { 
+.course-box {   
+ margin: 56px 0 56px 0;
+ padding: 20px;
+ max-width: 800px;
   display: flex;
   flex-direction: column;
   text-align: center;
   border: 4px solid #FDC221;
   border-radius: 10px;
-max-width: 800px;;
- padding: 20px;
- margin: 56px 0 56px 0;
 
+ 
 }
 .course-text {
   /* margin-top: 14px; */
@@ -20,13 +21,13 @@ font-weight: 600;
 line-height: 150%;
 letter-spacing: -0.87px;
 }
-.firstconsultation-text {
+/* .firstconsultation-text {
   margin-top: 14px;
   font-size: 37px;
 font-weight: 700;
 line-height: 99.8%;
 letter-spacing: -0.87px;
-}
+} */
 
 .course-text-bold {
   font-size: 32px;
@@ -40,10 +41,19 @@ letter-spacing: -0.87px;
 }
 @media (max-width: 961px) {
   .course-box { 
-    border: 3px solid #FDC221; 
-
-   padding: 6px 6px 10px 6px;
-   margin: 26px 0 26px 0;   
+    margin: 26px 0 26px 0; 
+    padding:10px;
+    border: 3px solid #FDC221;    
+  }
+  .course-text {
+    /* margin-top: 14px; */
+    font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.87px;
+  }
+  .course-text-bold {
+    font-size: 32px;
   }
 }
 

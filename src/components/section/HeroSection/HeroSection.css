@@ -43,10 +43,15 @@ letter-spacing: -0.87px;
   text-decoration: none;
   background-color: #331B3B;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 
 @media (max-width: 961px) {
+  .hero-info {
+    margin-top: 80px;
+    
+  }
   .hero-title {
     font-size: 40px;
    line-height: 47px;
