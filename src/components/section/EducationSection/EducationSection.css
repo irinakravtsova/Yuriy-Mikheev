@@ -81,7 +81,7 @@ line-height: 146%;
 
  @media (max-width: 541px) {
   .education {
-    margin-bottom: 28px;  
+    margin-bottom: 42px;  
   }
   .education__box {    
     flex-direction: column;

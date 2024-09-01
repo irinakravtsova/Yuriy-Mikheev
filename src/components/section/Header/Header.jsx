@@ -29,11 +29,8 @@ function Header() {
     </header> 
     <div className= {burgerActive ? 'burger burger_open' : 'burger'}
          onClick={() => setBurgerActive(false)}>
-        <Burger 
-        active = {burgerActive}
-        setActive = {setBurgerActive}
-         />
-        </div>
+        <Burger  />
+    </div>
     </>     
   );  
 }

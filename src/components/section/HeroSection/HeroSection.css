@@ -63,6 +63,12 @@ font-size: 30px;
   .hero-image {
     max-width: 500px;     
   }
+  .hero-subtitle::before { 
+       top: 52px;
+      width: 220px;
+    height: 14px;
+
+  }
 }
 @media (max-width: 800px) {
   .hero-image {
@@ -75,7 +81,8 @@ font-size: 30px;
 @media (max-width: 650px) {
 
   .hero-image {
-  max-width: 400px;   
+  max-width: 400px; 
+  margin-top: 30px;  
   }
   .hero-title {
     font-size: 32px;
@@ -103,7 +110,7 @@ letter-spacing: 0px;
   left: -35px;
   display: block;
   width: 200px;
-  height: 13px;
+  height: 10px;
   background-color: #FDC221;
   z-index: -5;
 }

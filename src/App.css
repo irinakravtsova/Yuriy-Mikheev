@@ -125,9 +125,9 @@ letter-spacing: -0.48px;
   .container {
        padding: 0 12px 0 13px;
    }
-   .body-fone::after {
+   /* .body-fone::after {
     display: none;
-   }
+   } */
 
    .heading-h1 {
     font-size: 32px;

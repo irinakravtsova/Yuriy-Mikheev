@@ -1,12 +1,12 @@
 import React from 'react'
 import { useState } from 'react';
 import InputMask from 'react-input-mask';
-import './popup.css'
+import './popupFooter.css'
 
 
 
 
-function Popup(props) {
+function PopupFooter(props) {
   const initialState = {
     name: "",   
     phone: "",
@@ -61,13 +61,11 @@ function Popup(props) {
   return (
    
     <div>
-      <div className=" popup__content"
-           >
-      <button className= "popup__close-btn"
-             onClick={props.click}></button>
+      <div className=" popup__content-footer" >
+    
                     
-        <div className="popup__wrapper">
-          <p className="popup__title">Записаться на первую<br></br> бесплатную консультацию</p>
+        <div className="popup__wrapper footer__form__wrapper">
+          <p className="footer-title popup-title">Записаться на первую<br></br> бесплатную консультацию</p>
         
         </div>        
 
@@ -77,7 +75,7 @@ function Popup(props) {
          >
         
           <input 
-          className="input order__input"
+          className="input footer-input"
           type="text"
           name="name"
           value={form.name}        
@@ -85,7 +83,7 @@ function Popup(props) {
           onChange={handleInputChange}/>
     
           <input  
-          className="input order__input"
+          className="input order__input footer-input"
           type="email"
           name="email"
           value={form.email}
@@ -100,18 +98,18 @@ function Popup(props) {
           value={form.phone}
            mask="+9 (999) - 999 - 99 - 99"
           replacement={{ _: /\d/ }}
-          className="input order__input"
+          className="input order__input footer-input"
           placeholder="Номер телефона"
           onChange={handleInputChange}
         />
     
          
 
-          <button className="popup__btn-form" type="submit" onClick={handleClick}> Оставить заявку</button>
+          <button className="popup__btn-form footer-btn" type="submit" onClick={handleClick}> Оставить заявку</button>
          
         </form> 
 
-        <p className="popup__subtitle" >Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности
+        <p className="popup__subtitle footer-subtitle" >Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности
         </p>
        
      
@@ -124,4 +122,4 @@ function Popup(props) {
   );
 }
 
-export default Popup;
+export default PopupFooter;
