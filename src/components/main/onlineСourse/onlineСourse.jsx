@@ -2,6 +2,7 @@ import React from 'react'
 import LinkButton from '../../linkButton/linkButton';
 import './onlineCourse.css'
 import Brand from '../Brand/Brand';
+import BellButton from '../../BellButton/BellButton';
 
 function OnlineСourse(props) {
 
@@ -35,10 +36,15 @@ function OnlineСourse(props) {
          text = 'Помощь с заботой и уважением'/> */}
       <div >        
             <h3 className= 'firstconsultation-text'> "Уверенное поведение в жизни и на работе"</h3>
-            < LinkButton 
-               isClass = {'hero__info-button'}
+            {/* < LinkButton 
+               isClass = {'course__btn flash-btn'}
                text = 'Ознакомиться'      
-            />
+            /> */}
+            <div className="button-wrapper">
+            < BellButton 
+             text = 'Ознакомиться'  />
+            </div>
+           
        </div>
      </div>
 

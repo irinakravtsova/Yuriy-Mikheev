@@ -23,10 +23,14 @@ function FirstConsultation(props) {
          text = 'Помощь с заботой и уважением'/>
       <div >        
             <h3 className= 'firstconsultation-text'>первая встреча бесплатно</h3>
-            <button className='hero__info-button'
-                 onClick={() => setPopupActive(!popupActive)} >
-               Записаться
-            </button>
+
+            <div className='firstconsultation-btn'>
+               <button className='btn flash-btn'
+                  onClick={() => setPopupActive(!popupActive)} >
+                  Записаться
+               </button>
+            </div>
+         
             <div className= {popupActive ? 'popup popup_open' : 'popup'}
                     >
                    < Popup 

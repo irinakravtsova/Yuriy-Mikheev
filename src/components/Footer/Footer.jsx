@@ -23,7 +23,7 @@ function Footer() {
         <p className='footer-input-title'>Связаться со мной</p>
         {/* <input type="text" placeholder='Введите e-mail' className='footer-input-text' />
         <button className='footer-input-button'>Отправить</button> */}
-        <ul className="footer__contact">
+        {/* <ul className="footer__contact">
             <li>
               <a 
                 href="https://api.whatsapp.com/send/?phone=79219925463&text&type=phone_number&app_absent=0" 
@@ -43,7 +43,15 @@ function Footer() {
                     src={Tg} alt=""/>
               </a>
             </li>
-    </ul>
+    </ul> */}
+    <ul className='burger__contacts-wrapper'>
+             <li>
+               <a className="burger__phone footer-contact" href="https://api.whatsapp.com/send/?phone=79219925463&text&type=phone_number&app_absent=0" target="_blank">WhatsApp: <br></br>+7 921 992-54-63</a>
+             </li>
+             <li >
+               <a className="burger__tg footer-contact" href="https://t.me/Yuriy_Mikheev" target="_blank">@Yuriy_Mikheev</a>
+             </li>
+           </ul>
       </div>
       <div className='footer__form-big'>
       < PopupFooter />

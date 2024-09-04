@@ -11,6 +11,9 @@ font-weight: 700;
 line-height: 99.8%;
 letter-spacing: -0.87px;
 }
+.firstconsultation-btn {
+  margin-top: 30px;
+}
 .hero__info-button {
   margin-top: 32px;
   display: inline-block; 

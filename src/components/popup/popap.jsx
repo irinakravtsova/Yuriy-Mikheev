@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import InputMask from 'react-input-mask';
 import './popup.css'
+import '../BellButton/BellButton.css'
 
 
 
@@ -15,8 +16,7 @@ function Popup(props) {
  
   const [form, setForm] = useState(initialState);
 
-  const [checked, setChecked] = useState(false);
-
+ 
   function handleInputChange(e) {
     const { name, value } = e.target;
     setForm({
@@ -28,9 +28,11 @@ function Popup(props) {
   function handleClick() {
     let error = formValidata();
     if (error === 0) {
-      setForm(initialState);
-      setChecked(false);
+      setForm(initialState);      
       alert("Заявка успешно отправлена");
+
+
+
     }
   }
 
@@ -71,8 +73,10 @@ function Popup(props) {
         
         </div>        
 
-        <form className="order__form" action="/example/handler.php"
-              method="post"
+        <form className="order__form" 
+                action="send.php"
+                method="post"
+                autoComplete='off'
                onSubmit={handleInputChange}
          >
         
@@ -82,12 +86,14 @@ function Popup(props) {
           name="name"
           value={form.name}        
           placeholder="Имя"
+          autoComplete='off'
           onChange={handleInputChange}/>
     
           <input  
           className="input order__input"
           type="email"
           name="email"
+          autoComplete='off'
           value={form.email}
           pattern=".+@example\com"
           required
@@ -102,12 +108,19 @@ function Popup(props) {
           replacement={{ _: /\d/ }}
           className="input order__input"
           placeholder="Номер телефона"
+          autoComplete='off'
           onChange={handleInputChange}
         />
     
+           {/* <div className="button-wrapper">
+            < BellButton 
+             text = 'Оставить заявку' 
+             type = "submit" />
+            </div> */}
+          <div className='popup-btn'>
+          <button className="btn flash-btn" type="submit" onClick={handleClick} onClickCapture={props.click}> Оставить заявку</button>
+          </div>
          
-
-          <button className="popup__btn-form" type="submit" onClick={handleClick}> Оставить заявку</button>
          
         </form> 
 

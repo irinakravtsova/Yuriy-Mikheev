@@ -45,6 +45,9 @@ letter-spacing: -0.87px;
   border-radius: 10px;
   cursor: pointer;
 }
+.hero__info-button:hover {
+  transform: scale(1.05);
+}
 
 
 @media (max-width: 961px) {

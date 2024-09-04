@@ -1,6 +1,6 @@
 import React from 'react';
 import './HeaderContact.css'
-import Phone from '../../assets/Wapp.png';
+import Phone from '../../assets/wapp.svg';
 import TG from '../../assets/TG-group.png';
 
 
@@ -12,7 +12,7 @@ function HeaderContact(props) {
           href="https://api.whatsapp.com/send/?phone=79219925463&text&type=phone_number&app_absent=0" 
           target="_blank">
             <img 
-              className='contact-active' 
+              className='contact-active flash-btn' 
               src={Phone} alt=""/>
         </a>
       </li>
@@ -22,7 +22,7 @@ function HeaderContact(props) {
           href="https://t.me/Yuriy_Mikheev" 
           target="_blank">
             <img 
-              className='contact-active'
+              className='contact-active flash-btn'
               src={TG} alt=""/>
         </a>
       </li>
