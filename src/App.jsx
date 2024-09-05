@@ -10,6 +10,7 @@ import OnlineСourse from './components/main/onlineСourse/onlineСourse'
 import Science from './components/section/Science/Science'
 import Review from './components/section/Reviews/Reviews'
 import Footer from './components/Footer/Footer'
+import UploadForm from './components/uploadForm/uploadForm'
 
 
 
@@ -31,6 +32,7 @@ function App() {
             < EducationSection />
             < Science />
             < Review />
+            < UploadForm />
           </main>        
         
         </div>

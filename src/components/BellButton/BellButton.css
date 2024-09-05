@@ -90,3 +90,9 @@ body {
     transition: transform .5s, outline-color .5s, box-shadow .5s;
     box-shadow: 0px 0px 0px 20px rgba(51, 27, 59, 0);
 }
+@media (max-width: 541px) {
+    .btn {
+        padding: 14px 40px 14px 40px;
+        font-size: 14px;
+    }
+}

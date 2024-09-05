@@ -44,20 +44,20 @@ overflow-y: scroll;
 }
 .education-title {
   font-weight: 600;
-font-size: 24px;
+  font-size: calc((18px + (24 - 18) * ((100vw - 300px) / (1300 - 300))));
 line-height: 146%;
  }
 
  .education-title-h2 {
   font-weight: 700;
-  font-size: 28px;
+  font-size: calc((24px + (28 - 24) * ((100vw - 300px) / (1300 - 300))));
   line-height: 146%;
   text-align: center;
  }
 
 .education-text {
   font-weight: 500;
-  font-size: 18px;
+  font-size: calc((16px + (18 - 16) * ((100vw - 300px) / (1300 - 300))));
   line-height: 146%; 
  }
 
@@ -71,12 +71,7 @@ line-height: 146%;
   .education {
     margin-bottom: 68px;  
   }
-  .education-title {
-    font-size: 20px;  
-   }
-   .education-text {  
-    font-size: 16px;  
-   }
+
  }
 
  @media (max-width: 541px) {
@@ -105,11 +100,9 @@ line-height: 146%;
     padding: 0px 0 97px 0px; 
     gap: 10px;   
   }
-  .education-title-h2 {  
-    font-size: 24px;   
-   }
+
    .education-title {
-    font-size: 18px;
+    /* font-size: 18px; */
   line-height: 116%;
    }
   

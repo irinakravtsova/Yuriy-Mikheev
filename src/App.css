@@ -63,32 +63,26 @@ right: 0px;
 }
 
 .heading-h1 {
-  font-size: 56px;
+  /* font-size: 56px; */
+  font-size: calc(48px + (56 - 48) * ((100vw - 300px) / (1400 - 300)));
  font-weight: 700;
  line-height: 100%;
  letter-spacing: -0.01em; 
 }
 
 .heading-h2 { 
-  font-weight: 700;
-  font-size: 48px;
+  font-weight: 700; 
+  font-size: calc((28px + (48 - 28) * ((100vw - 300px) / (1300 - 300))));
   line-height: 106%;
   letter-spacing: -0.01em;
   text-align: center;
 }
 
- .title {
- text-align: center;
- font-size: 48px;
-font-weight: 700;
-line-height: 106.3%;
-letter-spacing: -0.48px;
 
-}
 .text,
 .text-slider {
   font-weight: 700;
-  font-size: 20px;
+  font-size: calc((18px + (20 - 18) * ((100vw - 300px) / (1300 - 300))));
   line-height: 100%;
   letter-spacing: 0.64px;  
 }
@@ -161,21 +155,17 @@ letter-spacing: -0.48px;
     position: relative;
    }
    .heading-h1 {
-    font-size: 48px;
+    /* font-size: 48px; */
    font-weight: 600;
    }
-   .title {
-     font-size: 45px;
-    line-height: 59px;
-    letter-spacing: -1.35px;
-    }
+
     .text {
           font-size: 18px;
       line-height: 23px;
       letter-spacing: -0.54px;
    }
    .heading-h2 {    
-    font-size: 44px;
+    /* font-size: 44px; */
     font-weight: 600;
   }
 }
@@ -195,8 +185,12 @@ letter-spacing: -0.48px;
  
   }
   .heading-h2 {    
-    font-size: 28px;
+    /* font-size: 28px; */
     font-weight: 600;
+  }
+  .btn {
+   
+    padding: 10px 40px;
   }
 
 

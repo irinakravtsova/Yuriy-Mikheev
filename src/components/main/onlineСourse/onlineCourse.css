@@ -15,30 +15,18 @@
  
 }
 .course-text {
-  /* margin-top: 14px; */
-  font-size: 24px;
+
+  font-size: calc((18px + (24 - 18) * ((100vw - 300px) / (1300 - 300))));
 font-weight: 600;
 line-height: 150%;
 letter-spacing: -0.87px;
 }
-/* .firstconsultation-text {
-  margin-top: 14px;
-  font-size: 37px;
-font-weight: 700;
-line-height: 99.8%;
-letter-spacing: -0.87px;
-} */
+
 
 .course-text-bold {
-  font-size: 32px;
+  font-size: calc((23px + (32 - 23) * ((100vw - 300px) / (1300 - 300))));
 }
-.brend {
-  margin-top: 28px;
-  font-size: 37px;
-font-weight: 700;
-line-height: 99.8%;
-letter-spacing: -0.87px;
-}
+
 
 .course__btn {
   margin-top: 32px;
@@ -67,34 +55,7 @@ letter-spacing: -0.87px;
 .course__btn:active {
   transform: scale(0.97);
 }
-/* .flash-btn {
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0px 0px 0px 0px rgb(51, 27, 59);
-}
-.flash-btn::after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  opacity: .02;
-  left: calc(50% - 50px);
-  top: calc(50% - 50px);
-  border-radius: 50%;
-  transform: scale(0);
-  pointer-events: none;
-  transition: transform .7s, opasity .3s;
-}
-.flash-btn:hover:after {
-  transform: scale(5);
-  opacity: .14;
-}
-.flash-btn:active {
-  transition: transform .5s, outline-color .5s, box-shadow .5s;
-  box-shadow: 0px 0px 0px 20px rgba(164, 151, 168, 0);
-} */
+
 .button-wrapper {
   margin-top: 30px;
 }
@@ -105,15 +66,15 @@ letter-spacing: -0.87px;
     border: 3px solid #FDC221;    
   }
   .course-text {
-    /* margin-top: 14px; */
-    font-size: 24px;
+   
+    /* font-size: 24px; */
   font-weight: 600;
   line-height: 150%;
   letter-spacing: -0.87px;
   }
-  .course-text-bold {
+  /* .course-text-bold {
     font-size: 32px;
-  }
+  } */
 }
 
 @media (max-width: 541px) {
@@ -123,21 +84,18 @@ letter-spacing: -0.87px;
    padding: 6px 6px 10px 6px;
    margin: 0px 0 24px 0;   
   }
-  .course-text {
+  /* .course-text {
       font-size: 18px; 
-  }  
+  }   */
   .course-text-bold {
-    font-size: 23px;
+    /* font-size: 23px; */
     line-height: 28px;
   }
   .firstconsultation-text {
     margin-top: 14px;
     font-size: 24px;
 }
-.brend {
-  margin-top: 0px;
-  font-size: 25px;
-}
+
 .course__btn {
   margin-top: 14px; 
   padding: 18px 49px;

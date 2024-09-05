@@ -72,15 +72,15 @@ article h4 {
   padding-left: 20px;
 }
 .name__line {
-  transform: rotate(90deg);
-  width: 4px;
-  height: 32px;
-  margin-left: 20px;
+  /* transform: rotate(90deg); */
+  width: 24px;
+  height: 6px;
+  /* margin-left: 20px; */
 }
 .title {  
-  padding-left: 20px;
+  padding-left: 8px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: calc((14px + (16 - 14) * ((100vw - 300px) / (1300 - 300))));
   line-height: 200%;
   letter-spacing: 0.02em;
   color: #000;
@@ -93,7 +93,7 @@ article h4 {
   margin-top: 18px;
 
   font-weight: 400;
-font-size: 16px;
+  font-size: calc((14px + (16 - 14) * ((100vw - 300px) / (1300 - 300))));
 line-height: 159%;
 letter-spacing: 0.02em;
 color: #331b3b;
@@ -209,6 +209,10 @@ article.nextSlide {
         width: 124px;
       
       }
+      .name {
+     
+         padding-left: 48px;
+       }
 }
 
 @media (max-width: 541px) {
@@ -246,7 +250,7 @@ article.nextSlide {
     .text {
       max-width: 35em;    
       font-weight: 400;
-    font-size: 14px;
+    /* font-size: 14px; */
     line-height: 140%;
     letter-spacing: 0.02em;  
     }
@@ -274,5 +278,8 @@ article.nextSlide {
   top: 50px;
   right: 20px ;
 
+}
+.name {     
+  padding-left: 0px;
 }
 }

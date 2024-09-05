@@ -1,10 +1,4 @@
-/* .slider__actions {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 15px;
-  margin: auto 0 20px auto;
-} */
+
 
 .slider__science {
   display: flex;
@@ -53,8 +47,9 @@
 }
 
 .slide__title-science {
-  font-size: 16px;
+  font-size: calc((12px + (16 - 12) * ((100vw - 300px) / (1300 - 300))));
   font-weight: bold;
+  color: #331B3B;
 }
 .slide__science__link {
   pointer-events: none;
@@ -70,8 +65,6 @@ pointer-events: painted;
     padding: 12px;    
     height: 50vw;   
   }
-  .slide__title-science {
-    font-size: 12px; 
-  }
+
 }
 

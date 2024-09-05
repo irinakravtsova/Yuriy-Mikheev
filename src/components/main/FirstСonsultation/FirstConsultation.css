@@ -4,9 +4,16 @@
   flex-direction: column;
   text-align: center;
 }
+.brend {
+  margin-top: 28px;
+  font-size: calc((25px + (37 - 25) * ((100vw - 300px) / (1300 - 300))));
+font-weight: 700;
+line-height: 99.8%;
+letter-spacing: -0.87px;
+}
 .firstconsultation-text {
   margin-top: 14px;
-  font-size: 37px;
+ font-size: calc((24px + (37 - 24) * ((100vw - 300px) / (1300 - 300))));
 font-weight: 700;
 line-height: 99.8%;
 letter-spacing: -0.87px;
@@ -30,16 +37,16 @@ letter-spacing: -0.87px;
 }
 
 @media (max-width: 961px) {
-  .firstconsultation-text {
+  /* .firstconsultation-text {
   
     font-size: 32px;
  
-  }
+  } */
 }
 @media (max-width: 541px) {
 .brend {
   margin-top: 0px;
-  font-size: 25px;
+  /* font-size: 25px; */
 }
 .firstconsultation-box {
   margin-bottom: 0px; 
