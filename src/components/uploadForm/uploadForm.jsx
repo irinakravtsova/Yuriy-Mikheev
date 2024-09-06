@@ -23,7 +23,10 @@ function UploadForm() {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Форма успешно отправлена");
+      alert("Заявка успешно отправлена")
+      // setResult("Заявка успешно отправлена");
+      setResult('')
+      setForm(initialState);
       event.target.reset();
     } else {
       console.log("Error", data);
@@ -39,73 +42,21 @@ function UploadForm() {
  
   const [form, setForm] = useState(initialState);
 
-  
-
-  function handleInputChange(e) {
-    const { name, value } = e.target;
-    setForm({
-      ...form,
-      [name]: value,
-    });
-  }
-
-  function handleClick() {
-    let error = formValidata();
-    if (error === 0) {
-      setForm(initialState);
-   
-      alert("Заявка успешно отправлена");
-    }
-  }
-
-  function formValidata() {
-    let error = 0;
-    if (
-      !form.name ||     
-      !form.phone ||
-      !form.email 
-    
-    ) {
-      error++;
-      alert("Заполните пожалуйста все поля");
-    } else if (!isValidEmail(form.email)) {
-      error++;
-      alert("Введи корректный Email");
-    } 
-    return error;
-  }
-  
-  function isValidEmail(value) {
-    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    return emailPattern.test(value);
-  }
-
   return (
     <div>
       
-      {/* <form onSubmit={onSubmit}>
-        <input type="text" name="name" required/>
-        <input type="email" name="email" required/>
-  
-        <textarea name="message" required></textarea>
-
-        <button type="submit">Submit Form</button>
-
-      </form>
-      <span>{result}</span> */}
-
-
       <div className=" popup__content-footer" >
     
                     
         <div className="popup__wrapper footer__form__wrapper">
           <p className="footer-title popup-title">Записаться на первую<br></br> бесплатную консультацию</p>
         
-        </div>        
+        </div>  
+        <span className="popup__subtitle footer-subtitle">{result}</span>      
 
-        <form className="order__form" action="/example/handler.php"
-              method="post"  autoComplete="off"
-               onSubmit={handleInputChange}
+        <form className="order__form" action=""
+              method="post"  onSubmit={onSubmit}
+            
                >
         
         
@@ -113,48 +64,40 @@ function UploadForm() {
           className="input footer-input"
           type="text"
           name="name"
-          value={form.name}        
+          // value={form.name}        
           placeholder="Имя"
           required
-          autoComplete="off"
-          onChange={handleInputChange}/>
+          // autoComplete="off"
+          // onChange={handleInputChange}
+          />
    
           <input  
           className="input order__input footer-input"
           type="email"
           name="email"
-          value={form.email}
-          // pattern=".+@example\com"
+       
           required
           placeholder="Email"
-           autoComplete="off"
-          onChange={handleInputChange}
-          />
-         
+      
+          />         
           
 
         <InputMask
           name="phone"
-          value={form.phone}
-           mask="+9 (999) - 999 - 99 - 99"
-          replacement={{ _: /\d/ }}
+          // mask="+9 (999) - 999 - 99 - 99"
+          // replacement={{ _: /\d/ }}
           className="input order__input footer-input"
           placeholder="Номер телефона"
-           autoComplete="off"
-          required
-          onChange={handleInputChange}
-        />
-    
-         
+          //  autoComplete="off"
+          required        
+        />      
 
-          <button className="popup__btn-form footer-btn" type="submit" onClick={onSubmit}> Оставить заявку</button>
+          <button className="popup__btn-form footer-btn" type="submit" > Оставить заявку</button>
          
-        </form> 
-        <span>{result}</span>
+        </form>     
 
         <p className="popup__subtitle footer-subtitle" >Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности
-        </p>
-       
+        </p>  
      
      
      </div>

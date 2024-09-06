@@ -8,6 +8,7 @@ import '../BellButton/BellButton.css'
 
 
 function Popup(props) {
+  const [result, setResult] = React.useState("");
   const initialState = {
     name: "",   
     phone: "",
@@ -16,49 +17,37 @@ function Popup(props) {
  
   const [form, setForm] = useState(initialState);
 
- 
-  function handleInputChange(e) {
-    const { name, value } = e.target;
-    setForm({
-      ...form,
-      [name]: value,
-    });
-  }
 
-  function handleClick() {
-    let error = formValidata();
-    if (error === 0) {
-      setForm(initialState);      
-      alert("Заявка успешно отправлена");
-
-
-
-    }
-  }
-
-  function formValidata() {
-    let error = 0;
-    if (
-      !form.name ||     
-      !form.phone ||
-      !form.email 
+  const onSubmit = async (event) => {
+    console.log('click');
     
-    ) {
-      error++;
-      alert("Заполните пожалуйста все поля");
-    } else if (!isValidEmail(form.email)) {
-      error++;
-      alert("Введи корректный Email");
-    } 
-    return error;
-  }
-  
-  function isValidEmail(value) {
-    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    return emailPattern.test(value);
-  }
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
 
- 
+    formData.append("access_key", "9574cfc8-9d2a-4105-bc08-1fbbb32f6f7e");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      alert("Заявка успешно отправлена")
+      // setResult("Заявка успешно отправлена");
+      setResult('')
+      setForm(initialState);
+      {props.click}
+
+     hendleClose();
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
 
   return (
    
@@ -71,54 +60,49 @@ function Popup(props) {
         <div className="popup__wrapper">
           <p className="popup__title">Записаться на первую<br></br> бесплатную консультацию</p>
         
-        </div>        
+        </div>  
+        <span className="popup__subtitle footer-subtitle">{result}</span>          
 
-        <form className="order__form" 
-                action="send.php"
-                method="post"
+        <form className="order__form"                
+                 method="post"
                 autoComplete='off'
-               onSubmit={handleInputChange}
+               onSubmit={onSubmit}
+             
          >
         
           <input 
           className="input order__input"
           type="text"
           name="name"
-          value={form.name}        
+                
           placeholder="Имя"
           autoComplete='off'
-          onChange={handleInputChange}/>
+         />
     
           <input  
           className="input order__input"
           type="email"
           name="email"
           autoComplete='off'
-          value={form.email}
-          pattern=".+@example\com"
+        
+          // pattern=".+@example\com"
           required
           placeholder="Email"
-          onChange={handleInputChange}
+        
           />
 
         <InputMask
-          name="phone"
-          value={form.phone}
-           mask="+9 (999) - 999 - 99 - 99"
-          replacement={{ _: /\d/ }}
+          name="phone"         
+          //  mask="+9 (999) - 999 - 99 - 99"
+          // // replacement={{ _: /\d/ }}
           className="input order__input"
           placeholder="Номер телефона"
           autoComplete='off'
-          onChange={handleInputChange}
-        />
-    
-           {/* <div className="button-wrapper">
-            < BellButton 
-             text = 'Оставить заявку' 
-             type = "submit" />
-            </div> */}
+        
+        />   
+         
           <div className='popup-btn'>
-          <button className="btn flash-btn" type="submit" onClick={handleClick} onClickCapture={props.click}> Оставить заявку</button>
+           <button className="btn flash-btn" type="submit"  > Оставить заявку</button>
           </div>
          
          

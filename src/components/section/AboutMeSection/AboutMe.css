@@ -25,17 +25,22 @@ color: rgba(51, 27, 59, 0.66);
   font-weight: 600;
   font-size: 20px;
 }
-
+.aboutme-wrapper {
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
 .aboutme__text-wrapper {
  margin-top: 24px;
 }
 .aboutme-image {
+  /* flex: 1 1 40rem; */
   max-width: 670px;
   align-items: baseline;
   width: 100%;
 }
 .aboutme-info {
-  margin-top: 140px;
+  /* flex: 1 1 40rem; */
+  /* margin-top: 140px; */
   width: 50%;
 }
 @media (max-width: 961px) {

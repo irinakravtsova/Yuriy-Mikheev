@@ -20,7 +20,7 @@
 .review-title::before { 
   content: "";
   position: absolute;
-  top: 90px;
+  top: 108px;
   right: 116px ;
   display: block;
   width: 148px;

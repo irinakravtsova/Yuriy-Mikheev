@@ -14,7 +14,7 @@ function HeroSection() {
           level = 'h1'    
           title = 'Я помогу вам'
           isClassSubtitle={'hero-subtitle'}
-          subtitle= 'обрести уверенность  в жизни и на работе'
+          subtitle= 'обрести уверенность  в жизни и на  работе'
          /> 
 
          <ImageBox 

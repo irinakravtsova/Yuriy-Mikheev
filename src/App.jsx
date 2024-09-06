@@ -32,7 +32,7 @@ function App() {
             < EducationSection />
             < Science />
             < Review />
-            < UploadForm />
+         
           </main>        
         
         </div>
